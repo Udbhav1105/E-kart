@@ -23,6 +23,8 @@ console.log("ye aagya to upar waala bhi hogya")
 //   console.log("SMTP Error:", err);
 // }
 console.log("ye aaya kya?")
+console.log("EMAIL:", process.env.EMAIL);
+console.log("PASS LENGTH:", process.env.PASS?.length);
 
 try {
     const info = await transporter.sendMail({
