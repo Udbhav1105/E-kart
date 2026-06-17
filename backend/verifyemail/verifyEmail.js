@@ -5,11 +5,15 @@ export const verifyEmail=async(token,email)=>{
   const transporter = nodemailer.createTransport({
     host:"smtp.gmail.com",
     port:587,
+     requireTLS: true,  
     secure:false,
     auth: {
     user: process.env.EMAIL,
     pass: process.env.PASS,
   },
+  tls: {
+    rejectUnauthorized: false 
+  }
 });
 console.log("ye aagya to upar waala bhi hogya")
 // try {
