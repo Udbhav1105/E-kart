@@ -1,7 +1,8 @@
 import nodemailer from'nodemailer';
 
 export const verifyEmail=async(token,email)=>{
-  const transporter = nodemailer.createTransport({
+  console.log("yaha pr bhi aagya")
+  const transporter = await nodemailer.createTransport({
     service:'gmail',
     port:465,
     secure:true,
@@ -10,6 +11,7 @@ export const verifyEmail=async(token,email)=>{
     pass: process.env.PASS,
   },
 });
+console.log("ye aagya to upar waala bhi hogya")
 try {
   await transporter.verify();
   console.log("SMTP Connected");
