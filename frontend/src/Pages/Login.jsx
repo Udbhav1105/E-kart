@@ -27,7 +27,7 @@ const Login = () => {
             let res
             let toastId=toast.loading("Logging you in")
             try {
-                res=await axios.post("http://localhost:8000/api/v1/user/login",formData,{
+                res=await axios.post("https://e-kart-2-77mr.onrender.com/api/v1/user/login",formData,{
                   withCredentials:true
                 })
                 toast.success("Loggedin successfully ",{id:toastId})

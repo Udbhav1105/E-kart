@@ -17,7 +17,7 @@ const Cart = () => {
 
   useEffect(() => {
   const getCart=async()=>{
-    let res=await axios.get('http://localhost:8000/api/v1/user/cart',{withCredentials:true})
+    let res=await axios.get('https://e-kart-2-77mr.onrender.com/api/v1/user/cart',{withCredentials:true})
    
     setCart(res.data.cart)
 
@@ -30,7 +30,7 @@ const Cart = () => {
 }));
 
   const remove=()=>{
-    let res=axios.post('http://localhost:8000/api/v1/user/cart/remove',{},{withCredentials:true})
+    let res=axios.post('https://e-kart-2-77mr.onrender.com/api/v1/user/cart/remove',{},{withCredentials:true})
   }
 
   // if (loading) return <div className="p-4">Loading cart...</div>;
@@ -71,13 +71,13 @@ const Cart = () => {
               <div className="mr-10 flex w-50 justify-center text-xl font-semibold gap-6 items-center">
                 <button 
                 onClick={async()=>{
-                  let res=await axios.post('http://localhost:8000/api/v1/user/addToCart',{_id:item._id},{withCredentials:true})
+                  let res=await axios.post('https://e-kart-2-77mr.onrender.com/api/v1/user/addToCart',{_id:item._id},{withCredentials:true})
                 }}
                 className="whitespace-nowrap bg-amber-300 px-2 py-1 rounded-full cursor-pointer">Add more</button>
               <div className="font-semibold whitespace-nowrap">Qty: {item.quantity}</div>
                 <button 
                 onClick={async()=>{
-                  let res=await axios.post('http://localhost:8000/api/v1/user/cart/remove',{_id:item._id},{withCredentials:true})
+                  let res=await axios.post('https://e-kart-2-77mr.onrender.com/api/v1/user/cart/remove',{_id:item._id},{withCredentials:true})
                 }}
                 className="bg-red-500 text-gray-950 rounded-full cursor-pointer px-2 py-1">Remove</button>
               </div>

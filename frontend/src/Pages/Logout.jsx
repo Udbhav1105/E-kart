@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 const Logout = () => {
     const navigate=useNavigate()
     useEffect(async() => {
-      let res=await axios.post('http://localhost:8000/api/v1/user/logout',{},{withCredentials:true})
+      let res=await axios.post('https://e-kart-2-77mr.onrender.com/api/v1/user/logout',{},{withCredentials:true})
       setTimeout(() => {
         navigate('/')
       }, 2000);
