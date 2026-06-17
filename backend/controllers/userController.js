@@ -31,7 +31,7 @@ export const register=async(req,res)=>{
        const token=jwt.sign({id:newUser._id},process.env.SECRET_KEY, {expiresIn:"10m"})
        newUser.token=token
        await newUser.save()
-       verifyEmail(token,email)
+       await verifyEmail(token,email)
        return res.status(201).json({
         success:true,
         message:"user created successfully",
