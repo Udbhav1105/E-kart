@@ -18,6 +18,7 @@ try {
 } catch (err) {
   console.log("SMTP Error:", err);
 }
+console.log("ye aaya kya?")
 
 (async () => {
   const info = await transporter.sendMail({
@@ -27,6 +28,7 @@ try {
     text: `You have recently visited our website please verify your account by clicking on https://e-kart-2-77mr.onrender.com/verify/${token}`, // Plain-text version of the message
     
   });
+  console.log(email,"yaha pr bhi aagya ab kya dikkat hai?")
 
   console.log("Message sent:", info);
 })();
