@@ -5,7 +5,7 @@ import { login, register, reVerify, verify,isAvailable, logout, cart, addToCart,
 const router=express.Router()
 
 router.post('/register',register)
-router.post('/verify',verify)
+router.post('/verify/:token',verify)
 router.post('/reverify',reVerify)
 router.post('/login',login)
 router.get('/isavailable',verifyUser, isAvailable)

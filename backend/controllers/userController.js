@@ -48,7 +48,7 @@ export const register=async(req,res)=>{
 export const verify=async(req,res)=>{
     const authheader=req.headers.authorization
     if(!authheader || !authheader.startsWith('bearer')){
-        res.status(400).json({
+        return res.status(400).json({
             success:false,
             message:"auth header missing or invalid"
         })
@@ -71,7 +71,7 @@ export const verify=async(req,res)=>{
     }
     const user=await User.findById(decoded.id)
     if(!user){
-        res.status(400).json({
+        return res.status(400).json({
             success:false,
             message:"user does not exist"
         })
@@ -79,7 +79,7 @@ export const verify=async(req,res)=>{
     user.token=null
     user.isVerified=true
     await user.save()
-    res.status(200).json({
+    return res.status(200).json({
         success:true,
         message:"user verified successfully"
     })
