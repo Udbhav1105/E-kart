@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+body{
+  background: #F3F4F6;
+  color: #000000;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card{
+    color: #F8FAFC;
+}

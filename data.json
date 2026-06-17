@@ -1,0 +1,252 @@
+[
+  {
+    "image_url": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=500",
+    "details": "Men's Classic White Linen Shirt",
+    "price": 45.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?q=80&w=500",
+    "details": "Men's Navy Slim-Fit Polo",
+    "price": 32.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=500",
+    "details": "Men's Charcoal Graphic Tee",
+    "price": 25.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?q=80&w=500",
+    "details": "Men's Brown Leather Biker Jacket",
+    "price": 120.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1516257984877-a03a80407675?q=80&w=500",
+    "details": "Men's Black Denim Trucker Jacket",
+    "price": 75.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?q=80&w=500",
+    "details": "Men's Straight-Leg Blue Jeans",
+    "price": 60.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?q=80&w=500",
+    "details": "Men's Khaki Chino Pants",
+    "price": 55.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=500",
+    "details": "Men's White Minimalist Sneakers",
+    "price": 85.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1638247025967-b4e38f787b76?q=80&w=500",
+    "details": "Men's Leather Chelsea Boots",
+    "price": 110.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1522337360788-8b13df772ad5?q=80&w=500",
+    "details": "Men's Brown Leather Watch",
+    "price": 150.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?q=80&w=500",
+    "details": "Women's Silk Emerald Blouse",
+    "price": 55.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=500",
+    "details": "Women's Oversized Striped Sweater",
+    "price": 40.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=500",
+    "details": "Women's Ribbed Crop Top",
+    "price": 18.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=500",
+    "details": "Women's High-Waist Skinny Jeans",
+    "price": 65.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=500",
+    "details": "Women's Pleated Midi Skirt",
+    "price": 48.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=500",
+    "details": "Women's Floral Summer Maxi",
+    "price": 70.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=500",
+    "details": "Women's Little Black Dress",
+    "price": 95.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1580657018950-c7f7d6a652c6?q=80&w=500",
+    "details": "Women's Beige Trench Coat",
+    "price": 135.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1539533397308-a61e723294cc?q=80&w=500",
+    "details": "Women's Faux Fur Winter Coat",
+    "price": 180.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=500",
+    "details": "Women's Classic Red Stiletto",
+    "price": 120.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1611312449412-6cefac5dc3e4?q=80&w=500",
+    "details": "Men's Merino Wool Cardigan",
+    "price": 65.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=500",
+    "details": "Men's Olive Cargo Shirt",
+    "price": 38.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1580460812278-299dd272164f?q=80&w=500",
+    "details": "Men's Black Joggers",
+    "price": 45.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1594932224828-b4b059b6f68c?q=80&w=500",
+    "details": "Men's Formal Grey Trousers",
+    "price": 70.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1605733513597-a8f8d410fe3c?q=80&w=500",
+    "details": "Men's Suede Desert Boots",
+    "price": 95.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?q=80&w=500",
+    "details": "Men's Leather Loafers",
+    "price": 130.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?q=80&w=500",
+    "details": "Women's Polka Dot Wrap Top",
+    "price": 34.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=500",
+    "details": "Women's Cashmere V-Neck",
+    "price": 90.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1582142839970-2b9e04b60f25?q=80&w=500",
+    "details": "Women's Leather Mini Skirt",
+    "price": 50.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1509551388413-e18d0ac5d495?q=80&w=500",
+    "details": "Women's Wide-Leg Culottes",
+    "price": 45.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=500",
+    "details": "Women's Bohemian Lace Dress",
+    "price": 110.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=500",
+    "details": "Women's Tan Ankle Boots",
+    "price": 85.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1562273138-f46be4ebdf33?q=80&w=500",
+    "details": "Women's Strappy Gold Sandals",
+    "price": 60.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?q=80&w=500",
+    "details": "Unisex Aviator Sunglasses",
+    "price": 120.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1584917033904-4934adbb4a77?q=80&w=500",
+    "details": "Women's Quilted Handbag",
+    "price": 210.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=500",
+    "details": "Men's Flannel Plaid Shirt",
+    "price": 42.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1544022613-e87ca75a784a?q=80&w=500",
+    "details": "Men's Hooded Windbreaker",
+    "price": 65.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1617114919297-3c8ddb01f599?q=80&w=500",
+    "details": "Men's Corduroy Pants",
+    "price": 55.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=500",
+    "details": "Men's Running Performance Shoes",
+    "price": 140.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?q=80&w=500",
+    "details": "Women's Velvet Camisole",
+    "price": 28.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=500",
+    "details": "Women's Denim Shirt",
+    "price": 35.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1544923246-77307dd654ca?q=80&w=500",
+    "details": "Women's Puffer Down Jacket",
+    "price": 150.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1548142813-c348350df52b?q=80&w=500",
+    "details": "Women's Pastel Blazer",
+    "price": 85.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=500",
+    "details": "Men's Leather Messenger Bag",
+    "price": 190.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1584030373081-f37b7bb4fa8e?q=80&w=500",
+    "details": "Women's Silk Scarf",
+    "price": 30.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=500",
+    "details": "Unisex Canvas Slip-ons",
+    "price": 45.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1515347619252-60a4bdad358d?q=80&w=500",
+    "details": "Women's Over-the-knee Boots",
+    "price": 160.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=500",
+    "details": "Women's Cargo Joggers",
+    "price": 50.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=500",
+    "details": "Men's V-Neck Muscle Tee",
+    "price": 22.0
+  },
+  {
+    "image_url": "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?q=80&w=500",
+    "details": "Women's Cocktail Satin Dress",
+    "price": 130.0
+  }
+]

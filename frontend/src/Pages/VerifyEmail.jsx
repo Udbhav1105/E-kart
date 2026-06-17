@@ -1,0 +1,42 @@
+import axios from 'axios'
+import React, { useEffect } from 'react'
+import { useNavigate, useParams } from 'react-router-dom'
+
+const VerifyEmail =() => {
+    const {token}=useParams()
+    const navigate=useNavigate()
+    const verifyEmail=async()=>{
+        try {
+            
+        const res=await axios.post('http://localhost:8000/api/v1/user/verify',{},
+            {headers:{
+            Authorization:`bearer ${token}` 
+        }
+    }
+)
+        console.log(res.data.message)
+        setTimeout(() => {
+            navigate('/login')
+        }, 2000);
+        } catch (error) {
+            console.error(error.response?.data?.message || error.message)
+        }
+        
+    }
+    useEffect(()=>{
+        if(token){
+            verifyEmail()
+        }
+    },[token])
+
+
+  return (
+    <div className='flex text-gray-700 justify-center  items-center mt-5 mb-5  '>
+      <div className='flex items-center justify-center rounded-md bg-gray-200 w-150 border-2 px-15 py-15 text-4xl'>
+       ✅ Your Email has been verified you can now login and shop products 
+      </div>
+    </div>
+  )
+}
+
+export default VerifyEmail
