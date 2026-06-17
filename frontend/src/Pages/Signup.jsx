@@ -27,7 +27,7 @@ const [formData, setformData] = useState({
             let res
             const toastId=toast.loading("creating your account")
             try {
-              res=await axios.post("http://localhost:8000/api/v1/user/register",formData)
+              res=await axios.post("https://e-kart-2-77mr.onrender.com/api/v1/user/register",formData)
               toast.success(res.data?.message || "Account created successfully", {
                 id: toastId
               })
