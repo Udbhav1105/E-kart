@@ -21,7 +21,8 @@ const __dirname = path.dirname(__filename);
 app.use(express.static(path.join(__dirname, "public")));
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173",
+    "https://your-frontend-url.onrender.com"],
     credentials: true,
   })
 );
