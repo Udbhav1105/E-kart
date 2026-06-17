@@ -10,6 +10,12 @@ export const verifyEmail=async(token,email)=>{
     pass: process.env.PASS,
   },
 });
+try {
+  await transporter.verify();
+  console.log("SMTP Connected");
+} catch (err) {
+  console.log("SMTP Error:", err);
+}
 
 (async () => {
   const info = await transporter.sendMail({
