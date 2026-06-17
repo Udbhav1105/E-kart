@@ -14,7 +14,7 @@ export const verifyEmail=async(token,email)=>{
     from: process.env.EMAIL,
     to: email,
     subject: "Email Verification",
-    text: `You have recently visited our website please verify your account by clicking on http://localhost:5173/verify/${token}`, // Plain-text version of the message
+    text: `You have recently visited our website please verify your account by clicking on https://e-kart-2-77mr.onrender.com/verify/${token}`, // Plain-text version of the message
     
   });
 
