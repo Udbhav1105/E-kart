@@ -2,8 +2,8 @@ import nodemailer from'nodemailer';
 
 export const verifyEmail=async(token,email)=>{
   console.log("yaha pr bhi aagya")
-  const transporter = await nodemailer.createTransport({
-    service:'smtp.gmail.com',
+  const transporter = nodemailer.createTransport({
+    host:"smtp.gmail.com",
     port:587,
     secure:false,
     auth: {
