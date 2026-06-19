@@ -15,7 +15,6 @@ const Cart = () => {
   //   return map;
   // }, [products]);
 
-  useEffect(() => {
   const getCart=async()=>{
     let res=await axios.get('https://e-kart-3.onrender.com/api/v1/user/cart',{withCredentials:true})
     console.log("Cart data:", res.data.cart)
@@ -28,6 +27,7 @@ const Cart = () => {
     setCart(res.data.cart)
 
   }
+  useEffect(() => {
   getCart()
   }, [])
   const cartProducts = (cart && products) ? cart.map(item => ({
@@ -78,12 +78,14 @@ const Cart = () => {
                 <button 
                 onClick={async()=>{
                   let res=await axios.post('https://e-kart-3.onrender.com/api/v1/user/addToCart',{_id:item._id},{withCredentials:true})
+                  await getCart()
                 }}
                 className="whitespace-nowrap bg-amber-300 px-2 py-1 rounded-full cursor-pointer">Add more</button>
               <div className="font-semibold whitespace-nowrap">Qty: {item.quantity}</div>
                 <button 
                 onClick={async()=>{
-                  let res=await axios.post('https://e-kart-3.onrender.com/api/v1/user/cart/remove',{_id:item._id},{withCredentials:true})
+                  let res=await axios.post('https://e-kart-3.onrender.com/api/v1/user/cart/remove',{_id:item._id},{withCredentiawait getCart()als:true})
+                  await getCart()
                 }}
                 className="bg-red-500 text-gray-950 rounded-full cursor-pointer px-2 py-1">Remove</button>
               </div>
