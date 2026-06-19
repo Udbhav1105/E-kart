@@ -23,7 +23,7 @@ const Cart = () => {
 
   }
   getCart()
-  }, [cart])
+  }, [])
    const cartProducts = cart.map(item => ({
   ...products.find(p => p._id === item.product),
   quantity: item.quantity
