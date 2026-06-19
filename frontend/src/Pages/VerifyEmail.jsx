@@ -5,15 +5,23 @@ import { useNavigate, useParams } from 'react-router-dom'
 const VerifyEmail =() => {
     const {token}=useParams()
     const navigate=useNavigate()
-    const verifyEmail=async()=>{
-        try {
-            
-        const res=await axios.post('https://e-kart-3.onrender.com/api/v1/user/verify',{token},
-            {headers:{
-            Authorization:`bearer ${token}` 
-        }
+     useEffect(() => {
+    const verifyEmail = async () => {
+      try {
+        const res = await axios.post(
+          'https://e-kart-3.onrender.com/api/v1/user/verify',
+          {},  // body empty rakho
+          { headers: { Authorization: `bearer ${token}` } }
+        )
+        console.log(res.data.message)
+        setTimeout(() => navigate('/login'), 2000)
+      } catch (error) {
+        console.error('Verification failed:', error)
+      }
     }
-)
+
+    verifyEmail()
+  }, [token])
         console.log(res.data.message)
         setTimeout(() => {
             navigate('/login')
