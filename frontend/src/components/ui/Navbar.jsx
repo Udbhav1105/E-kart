@@ -15,8 +15,6 @@ const Navbar = () => {
     const navigate=useNavigate()
   
     const opencart=async()=>{
-        let res=await axios.get('https://e-kart-3.onrender.com/api/v1/user/cart',{withCredentials:true})
-        console.log(res.data)
         navigate('/user/cart')
     }
     useEffect(() => {
@@ -26,7 +24,6 @@ const Navbar = () => {
       })
       
       if(res?.data){
-        console.log(res.data.message)
         setlog(res.data.message)
       }
     }

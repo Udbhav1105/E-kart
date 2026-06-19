@@ -17,13 +17,6 @@ const Cart = () => {
 
   const getCart=async()=>{
     let res=await axios.get('https://e-kart-3.onrender.com/api/v1/user/cart',{withCredentials:true})
-    console.log("Cart data:", res.data.cart)
-    console.log("Products:", products)
-      console.log("Full response:", res.data)  // pura response dekho
-  console.log("Status:", res.status)
-    console.log("First cart item product id:", res.data.cart[0]?.product)
-    console.log("First product _id:", products[0]?._id)
-
     setCart(res.data.cart)
 
   }
@@ -84,7 +77,7 @@ const Cart = () => {
               <div className="font-semibold whitespace-nowrap">Qty: {item.quantity}</div>
                 <button 
                 onClick={async()=>{
-                  let res=await axios.post('https://e-kart-3.onrender.com/api/v1/user/cart/remove',{_id:item._id},{withCredentiawait getCart()als:true})
+                  let res=await axios.post('https://e-kart-3.onrender.com/api/v1/user/cart/remove',{_id:item._id},{withCredentials:true})
                   await getCart()
                 }}
                 className="bg-red-500 text-gray-950 rounded-full cursor-pointer px-2 py-1">Remove</button>
