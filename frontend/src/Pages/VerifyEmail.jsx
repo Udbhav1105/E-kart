@@ -8,7 +8,7 @@ const VerifyEmail =() => {
     const verifyEmail=async()=>{
         try {
             
-        const res=await axios.post('https://e-kart-2-77mr.onrender.com/api/v1/user/verify',{},
+        const res=await axios.post('https://e-kart-3.onrender.com/api/v1/user/verify',{},
             {headers:{
             Authorization:`bearer ${token}` 
         }

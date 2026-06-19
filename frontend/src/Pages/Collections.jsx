@@ -220,7 +220,7 @@ const Collections = () => {
                             onClick={async () => {
                               try {
                                 await axios.post(
-                                  "https://e-kart-2-77mr.onrender.com/api/v1/user/addtoCart",
+                                  "https://e-kart-3.onrender.com/api/v1/user/addtoCart",
                                   { _id: p._id },
                                   { withCredentials: true }
                                 );

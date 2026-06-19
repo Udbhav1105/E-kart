@@ -27,17 +27,19 @@ const [formData, setformData] = useState({
             let res
             const toastId=toast.loading("creating your account")
             try {
-              res=await axios.post("https://e-kart-2-77mr.onrender.com/api/v1/user/register",formData)
+              console.log("sent")
+              res=await axios.post("https://e-kart-3.onrender.com/api/v1/user/register",formData)
               toast.success(res.data?.message || "Account created successfully", {
                 id: toastId
               })
+              console.log("yha aagya")
               const token=res.data.token
               
               navigate(`/verify`)
 
             } catch (error) {
                  toast.error(
-                 error.response?.data?.message || "Something went wrong",
+                 error.response?.data?.message || error.message,
                  { id: toastId }
                  )
               }

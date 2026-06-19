@@ -6,6 +6,7 @@ import { verifyEmail } from '../verifyemail/verifyEmail.js';
 
 export const register=async(req,res)=>{
     try {
+        console.log("api hit")
         const {firstName, lastName, email,password}=req.body;
         if(!firstName || !lastName || !email || !password) {
             return res.status(400).json({

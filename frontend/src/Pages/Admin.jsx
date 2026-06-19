@@ -12,7 +12,7 @@ const Admin = () => {
 
  async function submitHandler(e){
       e.preventDefault()
-      const res=await axios.post('https://e-kart-2-77mr.onrender.com/admin',formData)
+      const res=await axios.post('https://e-kart-3.onrender.com/admin',formData)
       console.log("submitted")
   }
 
