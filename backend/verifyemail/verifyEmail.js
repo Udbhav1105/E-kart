@@ -2,13 +2,18 @@ import nodemailer from 'nodemailer'
 
 export const verifyEmail = async (token, email) => {
    console.log("mail hit", email, token)
-  const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: process.env.EMAIL,
-      pass: process.env.PASS,
-    }
-  })
+ const transporter = nodemailer.createTransport({
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: true,
+  auth: {
+    user: process.env.EMAIL,
+    pass: process.env.PASS,
+  },
+  connectionTimeout: 10000,  // 10 seconds
+  greetingTimeout: 10000,
+  socketTimeout: 10000,
+})
 
   await transporter.sendMail({
     from: process.env.EMAIL,
