@@ -29,7 +29,7 @@ export const register=async(req,res)=>{
         email,
         password:hashedpass
        })
-       const token=jwt.sign({id:newUser._id},process.env.SECRET_KEY, {expiresIn:"10m"})
+       const token=jwt.sign({id:newUser._id},process.env.SECRET_KEY, {expiresIn:"7d"})
        newUser.token=token
        await newUser.save()
        console.log("yaha tak chal gya")
