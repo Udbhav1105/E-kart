@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(
   cors({
     origin: ["http://localhost:5173",
-    "https://your-frontend-url.onrender.com"],
+    "https://e-kart-3.onrender.com"],
     credentials: true,
   })
 );
