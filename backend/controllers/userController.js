@@ -96,7 +96,7 @@ export const reVerify=async(req,res)=>{
             message:"User not found"
         })
     }
-    const token=jwt.sign({id:user._id},process.env.SECRET_KEY,{expiresIn:"10m"})
+    const token=jwt.sign({id:user._id},process.env.SECRET_KEY,{expiresIn:"7d"})
     verifyEmail(token,email)
     res.status(200).json({
         success:true,
