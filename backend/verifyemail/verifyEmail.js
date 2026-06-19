@@ -23,9 +23,13 @@ console.log("ye aagya to upar waala bhi hogya")
 //   console.log("SMTP Error:", err);
 // }
 console.log("ye aaya kya?")
-console.log("EMAIL:", process.env.EMAIL);
+console.log("EMAIL:", process.env.EMAIL,email);
 console.log("PASS LENGTH:", process.env.PASS?.length);
+console.log("Before Verify");
 
+await transporter.verify();
+
+console.log("SMTP Connected");
 try {
     const info = await transporter.sendMail({
       from: process.env.EMAIL,
