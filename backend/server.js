@@ -30,7 +30,7 @@ app.use(
 // app.get('/',(req,res)=>{
 //     res.sendFile(path.join(process.cwd(), "public", "index.html"));
 // })
-app.get("*", (req, res) => {
+app.get((req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 app.use('/api/v1/user',userRoute)
