@@ -30,9 +30,13 @@ app.use(
 // app.get('/',(req,res)=>{
 //     res.sendFile(path.join(process.cwd(), "public", "index.html"));
 // })
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
 app.use('/api/v1/user',userRoute)
 app.use('/admin',adminRoute)
 app.use('/products',showProducts)
+
 app.listen(PORT,(req,res)=>{
     console.log(`Server running at ${PORT}`)
     connectDB()
