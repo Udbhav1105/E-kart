@@ -30,12 +30,13 @@ console.log("Before Verify");
 await transporter.verify();
 
 console.log("SMTP Connected");
+console.log(email)
 try {
     const info = await transporter.sendMail({
       from: process.env.EMAIL,
       to: email,
       subject: "Email Verification",
-      text: `https://e-kart-2-77mr.onrender.com/verify/${token}`,
+      text: `https://e-kart-3.onrender.com/verify/${token}`,
     });
 
     console.log("MAIL SENT");
