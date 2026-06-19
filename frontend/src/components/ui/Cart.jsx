@@ -24,10 +24,10 @@ const Cart = () => {
   }
   getCart()
   }, [])
-   const cartProducts = cart.map(item => ({
+  const cartProducts = (cart && products) ? cart.map(item => ({
   ...products.find(p => p._id === item.product),
   quantity: item.quantity
-}));
+})) : [] 
 
   const remove=()=>{
     let res=axios.post('https://e-kart-3.onrender.com/api/v1/user/cart/remove',{},{withCredentials:true})
