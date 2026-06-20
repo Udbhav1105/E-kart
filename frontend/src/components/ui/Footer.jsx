@@ -1,28 +1,84 @@
-import React from 'react'
-import logo from '../../assets/logo.png'
+import React from "react";
+import logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
-    <div>
-      <div className='flex  justify-between px-10 py-4  w-full bg-gray-100'>
-        <div className='flex flex-col gap-4 w-90 px-4 py-5'>
-            <img src={logo} alt="" className='h-25 w-50 rounded-md ' />
-            <p className='text-[18px] text-gray-600'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repellendus? Quam illo delectus expedita itaque?</p>
+    <footer className="bg-[#163c4a] text-white mt-20">
+
+      <div className="max-w-7xl mx-auto px-6 py-16">
+
+        <div className="grid md:grid-cols-3 gap-12">
+
+          <div>
+            <img
+              src={logo}
+              alt="logo"
+              className="h-14 mb-6 object-contain"
+            />
+
+            <p className="text-gray-300 leading-7 max-w-sm">
+              Discover premium fashion, accessories and lifestyle
+              essentials crafted to elevate your everyday style.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-6 text-[#d6b88d]">
+              Company
+            </h3>
+
+            <div className="flex flex-col gap-3 text-gray-300">
+
+              <Link
+                to="/"
+                className="hover:text-[#d6b88d] transition"
+              >
+                Home
+              </Link>
+
+              <Link
+                to="/collection"
+                className="hover:text-[#d6b88d] transition"
+              >
+                Collections
+              </Link>
+
+              <Link
+                to="/about"
+                className="hover:text-[#d6b88d] transition"
+              >
+                About
+              </Link>
+
+              <Link
+                to="/contact"
+                className="hover:text-[#d6b88d] transition"
+              >
+                Contact
+              </Link>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-6 text-[#d6b88d]">
+              Get In Touch
+            </h3>
+
+            <div className="flex flex-col gap-3 text-gray-300">
+              <p>+91 1800 555 555</p>
+              <p>support@ekart.com</p>
+              <p>Available 24×7 for customer support</p>
+            </div>
+          </div>
         </div>
-        <div className=' flex flex-col py-5  gap-2 text-gray-500'>
-            <h1 className='text-gray-700 font-medium text-[25px]'>Company</h1>
-            <p className='hover:text-gray-600 hover:font-medium'>Home</p>
-            <p className='hover:text-gray-600 hover:font-medium'>About</p>
-            <p className='hover:text-gray-600 hover:font-medium'>Delivery</p>
-            <p className='hover:text-gray-600 hover:font-medium'>Support </p>
-        </div>
-        <div className='flex flex-col py-5 px-10 gap-2 text-gray-500'>
-            <h1 className='text-gray-700 font-medium text-[25px]'>Get in touch</h1>
-            <p>Call 180055555</p>
-            <p>Email: support@ekart.com</p>
+
+        <div className="border-t border-white/10 mt-12 pt-6 text-center text-gray-400 text-sm">
+          © {new Date().getFullYear()} E-Kart. All rights reserved.
         </div>
       </div>
-    </div>
-  )
-}
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

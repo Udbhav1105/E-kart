@@ -1,79 +1,183 @@
-import React from 'react'
-import axios from 'axios'
-import { useState } from 'react'
-import toast from 'react-hot-toast'
-import { Toaster } from 'react-hot-toast'
+import React, { useState } from "react";
+import axios from "axios";
+import toast, { Toaster } from "react-hot-toast";
+import { Eye, EyeOff } from "lucide-react";
+import { Link, useNavigate } from "react-router-dom";
 
-
-import {Link, useNavigate,} from 'react-router-dom'
 const Signup = () => {
-const navigate=useNavigate()
-const [formData, setformData] = useState({
-    firstName:"",
-    lastName:"",
-    email:"",
-    password:""
-})
-     const handleClick = (e) => {
-    const { name, value } = e.target
+  const navigate = useNavigate();
+
+  const [showPassword, setShowPassword] = useState(false);
+
+  const [formData, setformData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    password: "",
+  });
+
+  const handleClick = (e) => {
+    const { name, value } = e.target;
 
     setformData((prev) => ({
       ...prev,
       [name]: value,
-    }))
-  }
-    const submitHandler=async(e)=>{
-            e.preventDefault()
-            let res
-            const toastId=toast.loading("creating your account")
-            try {
-              console.log("sent")
-              res=await axios.post("https://e-kart-3.onrender.com/api/v1/user/register",formData)
-              toast.success(res.data?.message || "Account created successfully", {
-                id: toastId
-              })
-              console.log("yha aagya")
-              const token=res.data.token
-              
-              navigate(`/verify`)
+    }));
+  };
 
-            } catch (error) {
-                 toast.error(
-                 error.response?.data?.message || error.message,
-                 { id: toastId }
-                 )
-              }
-            
+  const submitHandler = async (e) => {
+    e.preventDefault();
+
+    const toastId = toast.loading("Creating your account");
+
+    try {
+      const res = await axios.post(
+        "https://e-kart-3.onrender.com/api/v1/user/register",
+        formData
+      );
+
+      toast.success(
+        res.data?.message || "Account created successfully",
+        {
+          id: toastId,
+        }
+      );
+
+      navigate("/verify");
+    } catch (error) {
+      toast.error(
+        error.response?.data?.message ||
+          error.message,
+        {
+          id: toastId,
+        }
+      );
     }
-    
+  };
 
   return (
-    <div className='flex mb-5 text-teal-900 text-[20px] h-140  justify-center '>
-        <Toaster position="top-right" />
-      <form action="" onSubmit={submitHandler} className=' bg-gray-200 flex flex-col gap-6 w-120 rounded-md px-4 justify-center items-center'>
-        <h1 className='font-bold text-2xl px-12 py-2'>Create your account</h1>
-        <div className='flex gap-10'>
-        <div className='flex flex-col gap-1'>
-          <label htmlFor="" className='font-medium '>Firstname</label>
-        <input type="text" name="firstName" placeholder='Firstname' onChange={handleClick}className='mt-2 rounded border-2 border-gray-400 px-2 py-1 w-35 '/>
-        </div>
-      <div className='flex flex-col gap-1'>
-         <label htmlFor="" className='font-medium'>Lastname</label>
-         <input type="text" name="lastName" placeholder='Lastname'  onChange={handleClick}className='mt-2 rounded border-2 border-gray-400 px-2 py-1 w-35 '/>
-      </div>
-       
-        </div>
-        <label htmlFor="" className='flex flex-col gap-2 font-medium'>Email
-            <input type="email" name="email" placeholder='email' onChange={handleClick} className='rounded px-2 py-1 border-2 border-gray-400'/>
-        </label>
-        <label htmlFor="" className='flex flex-col gap-2 font-medium'>Password
-            <input type="password" name="password" placeholder='password' onChange={handleClick} className='rounded px-2 py-1 border-2 border-gray-400'/>
-        </label>
-        <button className='bg-teal-600 text-gray-100 text-[18px] font-semibold w-62.5 hover:scale-102 cursor-pointer py-2 rounded-xl hover:transform-border' >Create Your Account</button>
-      <p className='font-semibold flex justify-center items-center gap-2'>Already have an account <span className='hover:underline cursor-pointer text-blue-400 text-[18px]'><Link to={'/login'}> Login</Link></span></p>
-      </form>
-    </div>
-  )
-}
+    <div className="min-h-screen bg-[#f7f4ef] flex items-center justify-center px-4 py-10">
+      <Toaster position="top-right" />
 
-export default Signup
+      <div className="w-full max-w-xl bg-white rounded-3xl shadow-xl p-8">
+        <div className="text-center mb-8">
+          <p className="text-[#d6b88d] uppercase tracking-[4px] text-sm font-medium">
+            Join E-Kart
+          </p>
+
+          <h1 className="text-4xl font-bold text-[#163c4a] mt-3">
+            Create Account
+          </h1>
+
+          <p className="text-gray-500 mt-2">
+            Start shopping with us today
+          </p>
+        </div>
+
+        <form
+          onSubmit={submitHandler}
+          className="flex flex-col gap-5"
+        >
+          <div className="grid md:grid-cols-2 gap-4">
+            <div>
+              <label className="block text-sm font-semibold text-[#163c4a] mb-2">
+                First Name
+              </label>
+
+              <input
+                type="text"
+                name="firstName"
+                placeholder="First Name"
+                onChange={handleClick}
+                required
+                className="w-full border border-gray-300 rounded-xl px-4 py-3 outline-none focus:border-[#163c4a]"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-semibold text-[#163c4a] mb-2">
+                Last Name
+              </label>
+
+              <input
+                type="text"
+                name="lastName"
+                placeholder="Last Name"
+                onChange={handleClick}
+                required
+                className="w-full border border-gray-300 rounded-xl px-4 py-3 outline-none focus:border-[#163c4a]"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label className="block text-sm font-semibold text-[#163c4a] mb-2">
+              Email Address
+            </label>
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              onChange={handleClick}
+              required
+              className="w-full border border-gray-300 rounded-xl px-4 py-3 outline-none focus:border-[#163c4a]"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-semibold text-[#163c4a] mb-2">
+              Password
+            </label>
+
+            <div className="relative">
+              <input
+                type={
+                  showPassword ? "text" : "password"
+                }
+                name="password"
+                placeholder="Create password"
+                onChange={handleClick}
+                required
+                className="w-full border border-gray-300 rounded-xl px-4 py-3 pr-12 outline-none focus:border-[#163c4a]"
+              />
+
+              <button
+                type="button"
+                onClick={() =>
+                  setShowPassword(!showPassword)
+                }
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500"
+              >
+                {showPassword ? (
+                  <EyeOff size={20} />
+                ) : (
+                  <Eye size={20} />
+                )}
+              </button>
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            className="bg-[#163c4a] hover:bg-[#1d4b5c] text-white py-3 rounded-xl font-semibold transition mt-2"
+          >
+            Create Your Account
+          </button>
+
+          <p className="text-center text-gray-600">
+            Already have an account?{" "}
+            <Link
+              to="/login"
+              className="text-[#163c4a] font-semibold hover:underline"
+            >
+              Login
+            </Link>
+          </p>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default Signup;

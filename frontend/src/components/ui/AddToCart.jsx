@@ -1,27 +1,34 @@
-import React, { useContext } from 'react'
-import { DataAssestsApi } from '../../Data/DataAssets'
-import { useParams } from 'react-router-dom'
-import axios from 'axios'
+import React from "react";
+import { useParams } from "react-router-dom";
+import axios from "axios";
 
 const AddToCart = () => {
-  const {id}=useParams()
-  console.log(id)
-  return (
-    <div className=''>
-      <button className='text-center'
-      onClick={async ()=>{
-       let res = await axios.post(
-  'http://localhost:8000/api/v1/user/cart',
-  { id },
-  {
-    withCredentials: true
-  }
-);
-        console.log(res.data.message)
-      }}
-      >Add to cart</button>
-    </div>
-  )
-}
+const { id } = useParams();
 
-export default AddToCart
+const addToCart = async () => {
+try {
+await axios.post(
+"https://e-kart-3.onrender.com/api/v1/user/addToCart",
+{ _id: id },
+{ withCredentials: true }
+);
+
+ 
+  alert("Added to cart");
+} catch (err) {
+  console.error(err);
+  alert("Failed to add item");
+}
+ 
+
+};
+
+return ( <button
+   onClick={addToCart}
+   className="font-semibold"
+ >
+Add To Cart </button>
+);
+};
+
+export default AddToCart;

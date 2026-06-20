@@ -1,28 +1,36 @@
-import React, { useContext } from "react";
-import axios from "axios";
-import { useState, useEffect } from "react";
-import { ShoppingCart } from "lucide-react";
-import { DataAssestsApi } from "../../Data/DataAssets";
+import React from "react";
 import Productsnew from "./Productsnew";
 
 const BestSeller = () => {
-  const products = useContext(DataAssestsApi);
-
   return (
-    <div className="mb-8">
-      <div className="text-center mb-10">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-900 tracking-tight">
-          Best Sellers <span className="ml-1"><span>🔥</span></span>
-        </h2>
+    <section className="bg-[#f7f4ef] py-20">
 
-        <p className="text-gray-500 text-sm sm:text-base mt-2">
-          Discover our most popular picks
-        </p>
-      </div>
-      <div>
+      <div className="max-w-7xl mx-auto px-6">
+
+        <div className="text-center mb-14">
+
+          <p className="text-[#d6b88d] uppercase tracking-[4px] text-sm font-medium">
+            Customer Favorites
+          </p>
+
+          <h2 className="text-4xl md:text-5xl font-bold text-[#163c4a] mt-4">
+            Best Sellers 🔥
+          </h2>
+
+          <p className="text-gray-500 mt-4 max-w-xl mx-auto">
+            Explore the products our customers love the most.
+            Handpicked styles that continue to trend season after season.
+          </p>
+
+          <div className="w-24 h-1 bg-[#d6b88d] mx-auto mt-6 rounded-full"></div>
+
+        </div>
+
         <Productsnew />
+
       </div>
-      </div>
+
+    </section>
   );
 };
 

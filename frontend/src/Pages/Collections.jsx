@@ -71,12 +71,12 @@ const Collections = () => {
   }, [products, filters, sort]);
 
   return (
-    <div className="w-full bg-white">
+   <div className="w-full bg-[#f7f4ef] min-h-screen">
       <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-14 py-6">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
           <div>
-            <h1 className="text-2xl font-semibold text-gray-900">Collections</h1>
+            <h1 className="text-4xl font-bold text-[#163c4a]">Discover Products</h1>
             <p className="text-sm text-gray-600 mt-1">
               {filteredProducts.length} products
             </p>
@@ -105,7 +105,7 @@ const Collections = () => {
         <div className="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-6">
           {/* Filters */}
           <aside className="lg:col-span-3">
-            <div className="border border-gray-200 h-auto rounded-lg p-4 bg-white sticky top-4">
+            <div className="bg-white rounded-3xl p-6 shadow-md sticky top-24">
               <div className="flex items-center justify-between">
                 <h2 className="font-semibold text-gray-900">Filters</h2>
               </div>
@@ -176,7 +176,7 @@ const Collections = () => {
                 No products match your filters.
               </div>
             ) : (
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7">
                 {filteredProducts.map((p) => {
                   const img = p?.images?.[0] || p?.image;
                   const title = p?.name || p?.description || "Product";
@@ -184,7 +184,7 @@ const Collections = () => {
                   return (
                     <div
                       key={p._id}
-                      className="border border-gray-200 rounded-lg overflow-hidden bg-white hover:shadow-sm"
+                      className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500"
                     >
                       <Link to={`/product/${p._id}`} className="block">
                         <div className="aspect-square bg-white flex items-center justify-center">
@@ -193,7 +193,7 @@ const Collections = () => {
                               src={img}
                               alt={title}
                               // loading="lazy"
-                              className="h-full w-full object-cover"
+                              className="h-full w-full object-cover group-hover:scale-110 transition duration-700"
                             />
                           ) : (
                             <div className="text-gray-500 text-sm">No image</div>
@@ -230,7 +230,7 @@ const Collections = () => {
                                 console.error(e);
                               }
                             }}
-                            className="flex-1 bg-yellow-400 hover:bg-yellow-500 text-gray-900 text-sm font-semibold py-2 rounded-full"
+                            className="w-full bg-[#163c4a] hover:bg-[#1d4b5c] text-white text-sm font-semibold py-3 rounded-xl transition"
                           >
                             Add to Cart
                           </button>

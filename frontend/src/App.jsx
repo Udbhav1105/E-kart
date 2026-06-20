@@ -15,7 +15,7 @@ import Logout from "./Pages/Logout";
 
 const App = () => {
   return (
-    <div className="overflow-x-hidden">
+    <div className="">
       <Navbar />
       <Routes >
       <Route path='/' element={<Home />} />

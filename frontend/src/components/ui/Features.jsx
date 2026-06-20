@@ -1,57 +1,73 @@
 import React from "react";
+import {
+  ShieldCheck,
+  RotateCcw,
+  Headphones,
+} from "lucide-react";
 
 const Features = () => {
+  const features = [
+    {
+      icon: <ShieldCheck size={34} />,
+      title: "Trusted Quality",
+      desc: "Carefully curated products with premium craftsmanship and authenticity guaranteed.",
+    },
+    {
+      icon: <RotateCcw size={34} />,
+      title: "Easy Returns",
+      desc: "Shop confidently with hassle-free returns and quick replacement support.",
+    },
+    {
+      icon: <Headphones size={34} />,
+      title: "24/7 Support",
+      desc: "Our dedicated team is always available to assist you whenever needed.",
+    },
+  ];
+
   return (
-    <div className="px-6 lg:px-16 py-16">
-      <div className="text-center mb-10">
-        <h2 className="text-2xl lg:text-3xl font-semibold text-gray-900">
-          Why Choose Us
-        </h2>
-        <p className="text-gray-500 text-sm mt-2">
-          We provide the best experience for our customers
-        </p>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+    <section className="bg-[#f7f4ef] py-24 px-6">
+      <div className="max-w-7xl mx-auto">
 
-        <div className="p-6 rounded-xl hover:shadow-md transition duration-300">
-          <img
-            src="https://thumbs.dreamstime.com/b/print-357123890.jpg"
-            className="h-16 w-16 mx-auto mb-4 rounded-full"
-          />
-          <h3 className="text-lg font-medium text-gray-800">
-            Trusted Brands
-          </h3>
-          <p className="text-sm text-gray-500 mt-1">
-            Authentic products from trusted global brands.
+        <div className="text-center mb-16">
+          <p className="text-[#d6b88d] uppercase tracking-[4px] text-sm font-medium">
+            Why Choose Us
           </p>
-        </div>
-        <div className="p-6 rounded-xl hover:shadow-md transition duration-300">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyrmCl-sB7qMdLO9x6HPhb1oSPouenStlQzA&s"
-            className="h-16 w-16 mx-auto mb-4 rounded-full"
-          />
-          <h3 className="text-lg font-medium text-gray-800">
-            Easy Returns
-          </h3>
-          <p className="text-sm text-gray-500 mt-1">
-            Hassle-free returns and quick exchanges.
-          </p>
-        </div>
-        <div className="p-6 rounded-xl hover:shadow-md transition duration-300">
-          <img
-            src="https://t4.ftcdn.net/jpg/13/51/78/01/360_F_1351780192_PPXQXrLeWNXQIHEgIJpglFUKRY9mk1Bc.jpg"
-            className="h-16 w-16 mx-auto mb-4 rounded-full"
-          />
-          <h3 className="text-lg font-medium text-gray-800">
-            24x7 Support
-          </h3>
-          <p className="text-sm text-gray-500 mt-1">
-            Dedicated support anytime you need help.
+
+          <h2 className="text-4xl md:text-5xl font-bold text-[#163c4a] mt-4">
+            Designed Around You
+          </h2>
+
+          <p className="text-gray-500 mt-5 max-w-2xl mx-auto">
+            We combine quality, reliability and customer-first service
+            to deliver a shopping experience you'll love.
           </p>
         </div>
 
+        <div className="grid md:grid-cols-3 gap-8">
+
+          {features.map((item, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-3xl p-10 shadow-sm hover:shadow-2xl transition-all duration-500 text-center group"
+            >
+              <div className="w-18 h-18 mx-auto rounded-full bg-[#163c4a] text-white flex items-center justify-center group-hover:scale-110 transition duration-300">
+                {item.icon}
+              </div>
+
+              <h3 className="text-2xl font-semibold text-[#163c4a] mt-6">
+                {item.title}
+              </h3>
+
+              <p className="text-gray-500 mt-4 leading-7">
+                {item.desc}
+              </p>
+            </div>
+          ))}
+
+        </div>
+
       </div>
-    </div>
+    </section>
   );
 };
 

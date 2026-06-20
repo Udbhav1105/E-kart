@@ -1,55 +1,98 @@
-import React, { useContext, useEffect } from 'react'
-import { DataAssestsApi } from '../../Data/DataAssets';
-import { useNavigate } from 'react-router-dom';
+import React, { useContext } from "react";
+import { DataAssestsApi } from "../../Data/DataAssets";
+import { useNavigate } from "react-router-dom";
 
 const Productsnew = () => {
-  const navigate=useNavigate();
-    const [products]=useContext(DataAssestsApi);
-    // let res;
-    // useEffect(() => {
-
-    // }, [input])
+  const navigate = useNavigate();
+  const [products] = useContext(DataAssestsApi);
 
   return (
-    <div className="flex gap-8 flex-wrap  px-6 py-5 w-screen mb-5">
-        {products.slice(0, 12).map(function (item,idx) {
-          return (
-     <div key={idx} className="group">
-              <div className="relative w-70 overflow-hidden rounded-xl bg-gray-100">
+    <section className="max-w-7xl mx-auto px-6 py-16">
+
+      <div className="flex items-center justify-between mb-10">
+        <div>
+          <p className="text-[#d6b88d] font-medium tracking-widest uppercase text-sm">
+            New Arrivals
+          </p>
+
+          <h2 className="text-4xl font-bold text-[#163c4a] mt-2">
+            Featured Products
+          </h2>
+        </div>
+
+        <button
+          onClick={() => navigate("/collection")}
+          className="hidden md:block border border-[#163c4a] text-[#163c4a] px-5 py-2 rounded-xl hover:bg-[#163c4a] hover:text-white transition"
+        >
+          View All
+        </button>
+      </div>
+
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        {products.slice(0, 12).map((item, idx) => (
+          <div
+            key={idx}
+            className="group cursor-pointer"
+            onClick={() => navigate(`/product/${item._id}`)}
+          >
+            <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500">
+
+              <div className="relative overflow-hidden">
+
                 <img
-                  src={item.images[0]} loading='lazy'
-                  className="w-full h-64 object-cover group-hover:scale-105 transition duration-300"
+                  src={item.images[0]}
+                  loading="lazy"
+                  alt={item.name}
+                  className="w-full h-[320px] object-cover group-hover:scale-110 transition duration-700"
                 />
-                <span className="absolute top-3 right-3 bg-black text-white text-xs px-3 py-1 rounded-full">
+
+                <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition duration-500" />
+
+                <div className="absolute top-4 right-4 bg-[#163c4a] text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg">
                   ₹ {item.price}
-                </span>
-                <div
-                  className="absolute inset-0 bg-black/40 opacity-0 
-                group-hover:opacity-100 transition duration-300 
-                flex items-center justify-center"
-                >
-                  <button
-                    className="bg-white text-black px-4 py-2 rounded-full text-sm 
-                     scale-90 group-hover:scale-100 transition"
-                     onClick={()=>{
-                      navigate(`/product/${item._id}`)
-                     }}
-                  >
-                    View Product
-                  </button>
                 </div>
+
+                <button
+                  className="
+                  absolute bottom-5 left-1/2
+                  -translate-x-1/2 translate-y-16
+                  group-hover:translate-y-0
+                  bg-[#d6b88d]
+                  text-[#163c4a]
+                  font-semibold
+                  px-6 py-3
+                  rounded-xl
+                  transition-all duration-500
+                  "
+                >
+                  View Product
+                </button>
               </div>
 
-              <div className="mt-3 space-y-1">
-                <h3 className="text-[18px]  text-gray-800 font-semibold">
+              <div className="p-5">
+                <h3 className="text-lg font-semibold text-[#163c4a] line-clamp-1">
                   {item.name}
                 </h3>
+
+                <p className="text-gray-500 text-sm mt-2">
+                  Premium quality product crafted for everyday use.
+                </p>
               </div>
             </div>
-            );
-        })}
-        </div>
-  )
-}
+          </div>
+        ))}
+      </div>
 
-export default Productsnew
+      <div className="flex justify-center mt-10 md:hidden">
+        <button
+          onClick={() => navigate("/collection")}
+          className="bg-[#163c4a] text-white px-6 py-3 rounded-xl"
+        >
+          View All Products
+        </button>
+      </div>
+    </section>
+  );
+};
+
+export default Productsnew;

@@ -9,10 +9,10 @@ import View from '../components/ui/View'
 
 const Home = () => {
   return (
-    <div className='object-cover'>
+    <div className=''>
       <NewHero />
-          {/* <Hero />
-         <Products /> */}
+          {/* <Hero /> */}
+         {/* <Products /> */}
          <BestSeller />
         <Features />
         {/* <View /> */}

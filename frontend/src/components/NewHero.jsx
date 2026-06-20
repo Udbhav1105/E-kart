@@ -1,64 +1,95 @@
-import React from 'react'
-import right from '../assets/right.png'
+import { motion } from "framer-motion";
 
 const NewHero = () => {
   return (
-    <div className='flex flex-wrap mt-10 mb-10 ml-5 h-[70vh] sm:flex-col gap-2 rounded-xl w-screen overflow-scroll'>
+    <section className="relative overflow-hidden bg-[#163c4a] rounded-[30px] mx-4 mt-6 mb-10 min-h-[80vh] flex items-center">
+      <div className="absolute top-0 left-0 w-96 h-96 bg-[#d6b88d]/10 blur-[120px]" />
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#d6b88d]/10 blur-[150px]" />
 
-      <div className=' group relative rounded-xl  h-full w-[30vw] cursor-pointer hover:scale-102 transition-all ease-in-out duration-400 '>
-        <div className="absolute inset-0 rounded-xl bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 
-                transition-all duration-300">
-                </div>
-        <img src="https://naturalman.uk.com/cdn/shop/articles/filson_1600x.jpg?v=1750425511" alt=""  className='overflow-hidden rounded-xl h-full w-160 realtive'/>
-        <div className='absolute bottom-0  w-full overflow-hidden text-white px-4 pb-4 '>
-            <p className='uppercase font-bold text-3xl'>UNCOMPROMISING Fashion</p>
-            <span className='font-medium text-2xl '>MAMMOTH FIELD PARKA</span>
-            <p className='text-xl font-medium'>Rugged and modern. Built for every terrain.</p>
-        </div>
-      </div>
-      <div className='w-2/3  h-full rounded-xl overflow-hidden mr-10 flex flex-col gap-2'>
-        <div className='flex gap-2 h-1/2   rounded-xl'>
-            <div className='group relative hover:scale-102 transition-all ease-in-out duration-400 w-1/2 object-cover  h-full rounded-xl left cursor-pointer'>
-             <div className="absolute inset-0 rounded-xl bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 
-                transition-all duration-300">
-                </div>
-            <img src="https://cdn.mos.cms.futurecdn.net/Y5ZDGaLpk8QkUdHKDgusDN.jpg" alt="" className=' h-full w-full object-cover overflow-hidden rounded-xl' />
-            <div className='absolute bottom-0  w-full overflow-hidden text-white px-3 pb-3 '>
-            <p className='uppercase font-bold text-3xl'>WOMEN'S ESSENTIALS</p>
-            <span className='font-medium text-2xl '>EFFORTLESS STYLE</span>
-            <p className='text-xl font-medium'>Modern fits for everyday confidence.</p>
-        </div>
+      <div className="max-w-7xl mx-auto w-full px-8 lg:px-16 grid lg:grid-cols-2 gap-16 items-center">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <span className="inline-block bg-white/10 backdrop-blur-md border border-white/10 px-5 py-2 rounded-full text-[#d6b88d] text-sm tracking-wider">
+            NEW SEASON ARRIVALS
+          </span>
+
+          <h1 className="mt-6 text-white text-5xl md:text-7xl font-bold leading-tight">
+            Elevate
+            <span className="block text-[#d6b88d]">
+              Your Style
+            </span>
+          </h1>
+
+          <p className="mt-6 text-gray-300 text-lg max-w-xl leading-relaxed">
+            Discover carefully curated fashion, accessories and
+            lifestyle essentials crafted for modern living.
+          </p>
+
+          <div className="flex flex-wrap gap-4 mt-10">
+            <button className="bg-[#d6b88d] text-[#163c4a] font-semibold px-8 py-4 rounded-xl hover:scale-105 transition-all duration-300">
+              Shop Collection
+            </button>
+
+            <button className="border border-white/20 text-white px-8 py-4 rounded-xl hover:bg-white/10 transition-all duration-300">
+              Explore More
+            </button>
+          </div>
+
+          <div className="flex flex-wrap gap-6 mt-12">
+            <div className="bg-white/10 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/10">
+              <h3 className="text-white text-2xl font-bold">10K+</h3>
+              <p className="text-gray-300 text-sm">Happy Customers</p>
             </div>
-            <div className='relative group  w-1/2 object-cover h-full rounded-xl right hover:scale-102 transition-all ease-in-out duration-400 cursor-pointer'>
-            <div className="absolute inset-0 rounded-xl bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 
-                transition-all duration-300">
-                </div>
-              <img src="https://i.pinimg.com/736x/89/79/d0/8979d03737eafeb6ba97a044bf51d498.jpg" alt="" className='h-full w-full object-cover overflow-hidden rounded-xl' />
-               <div className='absolute bottom-0  w-full overflow-hidden text-white px-2 pb-3  '>
-            <p className='uppercase font-bold text-3xl'>LIFESTYLE GOODS</p>
-            <span className='font-medium text-2xl '>DAILY REFINEMENT</span>
-            <p className='text-xl font-medium'>Minimal tools for a focused life.</p>
-        </div>
-              </div>
-        </div>
-         <div className='hover:scale-101 w-full h-1/2 transition-all rounded-xl ease-in-out duration-400 cursor-pointer'>
-         <div className='relative object-cover group h-full w-full  rounded-xl cursor-pointer'>
-            <div className="absolute inset-0 rounded-xl bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 
-                transition-all duration-300">
-                </div>
-            <img src={right} alt="" className='h-80 w-full object-cover rounded-xl overflow-hidden'/>
-            <div className='absolute bottom-0 w-full overflow-hidden text-white px-8 pb-10 '>
-            <p className='uppercase font-bold text-3xl'>ACCESSORIES</p>
-            <span className='font-medium text-2xl '>ADVENTURE READY</span>
-            <p className='text-xl font-medium'>Carry everything that matters.</p>
-        </div>
-        </div>
-        </div>
-      
-       </div>
 
+            <div className="bg-white/10 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/10">
+              <h3 className="text-white text-2xl font-bold">500+</h3>
+              <p className="text-gray-300 text-sm">Premium Products</p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/10">
+              <h3 className="text-white text-2xl font-bold">4.9★</h3>
+              <p className="text-gray-300 text-sm">Customer Rating</p>
+            </div>
+          </div>
+        </motion.div>
+
+        <motion.div
+          animate={{
+            y: [-15, 15, -15],
+          }}
+          transition={{
+            duration: 6,
+            repeat: Infinity,
+          }}
+          className="relative flex justify-center"
+        >
+          <div className="absolute w-[420px] h-[420px] rounded-full bg-[#d6b88d]/20 blur-3xl" />
+
+          <img
+            src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200"
+            alt=""
+            className="relative z-10 w-full max-w-[500px] h-[650px] object-cover rounded-[30px] shadow-2xl"
+          />
+
+          <div className="absolute -left-10 bottom-20 bg-white rounded-2xl px-5 py-4 shadow-xl">
+            <p className="text-xs text-gray-500">Trending Now</p>
+            <h3 className="font-semibold text-[#163c4a]">
+              Premium Collection
+            </h3>
+          </div>
+
+          <div className="absolute -right-8 top-20 bg-[#d6b88d] rounded-2xl px-5 py-4 shadow-xl">
+            <p className="text-sm font-semibold text-[#163c4a]">
+              New Arrivals
+            </p>
+          </div>
+        </motion.div>
       </div>
-  )
-}
+    </section>
+  );
+};
 
-export default NewHero
+export default NewHero;
