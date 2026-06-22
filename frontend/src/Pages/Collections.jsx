@@ -219,13 +219,14 @@ const Collections = ({data}) => {
                             type="button"
                             onClick={async () => {
                               try {
+                                setcartValue(prev=>prev + 1);
+                                console.log(cartValue)
                                 await axios.post(
                                   "https://e-kart-3.onrender.com/api/v1/user/addToCart",
                                   { _id: p._id },
                                   { withCredentials: true }
                                 );
                                 // console.log(p._id)
-                                setcartValue(prev=>prev + 1);
                               } catch (e) {
                                 console.error(e);
                               }

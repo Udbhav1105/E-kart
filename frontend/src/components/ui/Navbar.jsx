@@ -18,6 +18,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const opencart = () => {
+    console.log(cartValue)
     navigate("/user/cart");
   };
 
@@ -39,7 +40,7 @@ const Navbar = () => {
     };
 
     isAvailable();
-  }, [cartValue]);
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 bg-[#163c4a] border-b border-white/10 shadow-lg">
