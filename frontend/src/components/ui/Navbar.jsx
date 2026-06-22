@@ -53,7 +53,7 @@ const Navbar = () => {
 
     getCart();
     isAvailable();
-  }, []);
+  }, [cartVal]);
 
   return (
     <header className="sticky top-0 z-50 bg-[#163c4a] border-b border-white/10 shadow-lg">

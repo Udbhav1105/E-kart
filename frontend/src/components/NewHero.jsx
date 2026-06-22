@@ -74,14 +74,14 @@ const NewHero = () => {
             className="relative z-10 w-full max-w-[500px] h-[650px] object-cover rounded-[30px] shadow-2xl"
           />
 
-          <div className="absolute -left-10 bottom-20 bg-white rounded-2xl px-5 py-4 shadow-xl">
-            <p className="text-xs text-gray-500">Trending Now</p>
+          <div className="absolute -left-10 bottom-20 z-40 bg-white rounded-2xl px-5 py-4 shadow-xl">
+            <p className="text-xs text-gray-500 z-40">Trending Now</p>
             <h3 className="font-semibold text-[#163c4a]">
               Premium Collection
             </h3>
           </div>
 
-          <div className="absolute -right-8 top-20 bg-[#d6b88d] rounded-2xl px-5 py-4 shadow-xl">
+          <div className="z-40 absolute -right-8 top-20 bg-[#d6b88d] rounded-2xl px-5 py-4 shadow-xl">
             <p className="text-sm font-semibold text-[#163c4a]">
               New Arrivals
             </p>
