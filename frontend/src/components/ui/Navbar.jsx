@@ -12,10 +12,9 @@ import axios from "axios";
 import { DataAssestsApi } from "../../Data/DataAssets";
 
 const Navbar = () => {
-  const [cartVal, setCartVal] = useState(0);
   const [log, setlog] = useState("login");
   const [mobileMenu, setMobileMenu] = useState(false);
-  const [,cartValue,]=useContext(DataAssestsApi)
+  const [,cartValue]=useContext(DataAssestsApi)
   const navigate = useNavigate();
 
   const opencart = () => {

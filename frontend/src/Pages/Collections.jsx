@@ -225,7 +225,7 @@ const Collections = ({data}) => {
                                   { withCredentials: true }
                                 );
                                 // console.log(p._id)
-                                setcartValue(cartValue + 1);
+                                setcartValue(prev=>prev + 1);
                               } catch (e) {
                                 console.error(e);
                               }
