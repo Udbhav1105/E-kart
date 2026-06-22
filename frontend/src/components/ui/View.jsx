@@ -122,7 +122,7 @@ const View = () => {
           </div>
 
           <div className="flex gap-3 mb-6">
-            <div className="flex px-20 py-4 bg-[#163c4a] text-white rounded-xl">
+            <div className="flex px-20 py-4 bg-[#163c4a] cursor-pointer text-white rounded-xl">
               <AddToCart />
             </div>
 

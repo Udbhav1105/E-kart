@@ -1,9 +1,10 @@
 import React, { useContext, useMemo, useState } from "react";
 import axios from "axios";
 import { DataAssestsApi } from "../Data/DataAssets";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Collections = ({data}) => {
+  const navigate=useNavigate()
   const [products, cartValue, setcartValue] = useContext(DataAssestsApi);
 
   const [filters, setFilters] = useState({
@@ -215,26 +216,21 @@ const Collections = ({data}) => {
                           ) : null}
                         </div>
                         <div className="mt-3 flex gap-2">
-                          <button
-                            type="button"
-                            onClick={async () => {
-                              try {
-                                setcartValue(prev=>prev + 1);
-                                console.log(cartValue)
-                                await axios.post(
-                                  "https://e-kart-3.onrender.com/api/v1/user/addToCart",
-                                  { _id: p._id },
-                                  { withCredentials: true }
-                                );
-                                // console.log(p._id)
-                              } catch (e) {
-                                console.error(e);
-                              }
-                            }}
-                            className="w-full bg-[#163c4a] hover:bg-[#1d4b5c] text-white text-sm font-semibold py-3 rounded-xl transition"
-                          >
-                            Add to Cart
-                          </button>
+                           <button
+                            onClick={() => navigate(`/product/${p._id}`)}
+                  className="
+                          w-full
+                          cursor-pointer
+                  bg-[#d6b88d]
+                  text-[#163c4a]
+                  font-semibold
+                  px-6 py-3
+                  rounded-xl
+                 
+                  "
+                >
+                  View Product
+                </button>
                         </div>
                       </div>
                     </div>
