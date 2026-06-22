@@ -11,15 +11,17 @@ import Collections from "./Pages/Collections";
 import View from "./components/ui/View";
 import Cart from "./components/ui/Cart";
 import Logout from "./Pages/Logout";
+import { useState } from "react";
 
 
 const App = () => {
+    const [cartVal, setcartVal] = useState(0)
   return (
     <div className="">
-      <Navbar />
+      <Navbar cartVal={cartVal}/>
       <Routes >
       <Route path='/' element={<Home />} />
-      <Route path="/collection" element={<Collections />} />
+      <Route path="/collection" element={<Collections data={cartVal,setcartVal} />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/verify" element={<Verify />} />
       <Route path="/verify/:token" element={<VerifyEmail />} />

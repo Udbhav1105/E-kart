@@ -7,14 +7,15 @@ import {
   Menu,
   X,
 } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import axios from "axios";
+import { DataAssestsApi } from "../../Data/DataAssets";
 
 const Navbar = () => {
   const [cartVal, setCartVal] = useState(0);
   const [log, setlog] = useState("login");
   const [mobileMenu, setMobileMenu] = useState(false);
-
+  const [,cartValue,]=useContext(DataAssestsApi)
   const navigate = useNavigate();
 
   const opencart = () => {
@@ -38,22 +39,8 @@ const Navbar = () => {
       } catch (err) {}
     };
 
-    const getCart = async () => {
-      try {
-        const res = await axios.get(
-          "https://e-kart-3.onrender.com/api/v1/user/cart",
-          {
-            withCredentials: true,
-          }
-        );
-
-        setCartVal(res.data.cart.length);
-      } catch (err) {}
-    };
-
-    getCart();
     isAvailable();
-  }, [cartVal]);
+  }, [cartValue]);
 
   return (
     <header className="sticky top-0 z-50 bg-[#163c4a] border-b border-white/10 shadow-lg">
@@ -147,7 +134,7 @@ const Navbar = () => {
               <ShoppingBag size={22} />
 
               <span className="absolute -top-2 -right-2 bg-white text-[#163c4a] text-xs font-bold min-w-[22px] h-[22px] rounded-full flex items-center justify-center">
-                {cartVal}
+                {cartValue}
               </span>
             </button>
 

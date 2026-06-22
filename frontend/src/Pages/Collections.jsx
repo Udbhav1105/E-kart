@@ -3,7 +3,7 @@ import axios from "axios";
 import { DataAssestsApi } from "../Data/DataAssets";
 import { Link } from "react-router-dom";
 
-const Collections = () => {
+const Collections = ({data}) => {
   const [products, cartValue, setcartValue] = useContext(DataAssestsApi);
 
   const [filters, setFilters] = useState({
