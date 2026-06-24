@@ -12,7 +12,7 @@ const Collections = ({data}) => {
         "https://e-kart-3.onrender.com/api/v1/user/cart",
         { withCredentials: true }
       );
-      setcartValue(res.data.cart.length+1);
+      setcartValue(res.data.cart.length);
     } catch (err) {
       console.log(err);
     }
