@@ -100,7 +100,7 @@ const Navbar = () => {
                 <User size={22} />
               </button>
 
-              <div className="absolute right-0 top-14 hidden group-hover:flex flex-col bg-white text-[#163c4a] rounded-2xl shadow-xl min-w-[170px] p-4 gap-3">
+              <div className="absolute right-0 top-10 hidden group-hover:flex flex-col bg-white text-[#163c4a] rounded-2xl shadow-xl min-w-[170px] p-4 gap-3">
 
                 {log === "login" ? (
                   <Link

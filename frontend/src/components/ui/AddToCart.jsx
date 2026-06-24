@@ -24,7 +24,7 @@ await axios.post(
 
 return ( <button
    onClick={addToCart}
-   className="font-semibold cursor-pointer"
+   className="font-semibold cursor-pointer border-2 px-20 py-4 rounded-xl"
  >
 Add To Cart </button>
 );

@@ -109,8 +109,8 @@ export const products = [{
     "https://m.media-amazon.com/images/I/61qMMGkDHfL._SY879_.jpg",
     "https://m.media-amazon.com/images/I/61qMMGkDHfL._SY879_.jpg"
   ],
-  "category": "Men",
-  "subCategory": "Topwear",
+  "category": "men",
+  "subCategory": "topwear",
   "brand": "Deelmo",
   "sizes": [
     "s",
@@ -474,6 +474,230 @@ export const products = [{
   },
   "updatedAt": {
     "$date": "2026-06-24T14:04:09.381Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "p16",
+  "name": "Button-Down Striped Print Casual Short Sleeve Shirt",
+  "shortDescription": "Aahwan White Solid Button-Down Striped Print Casual Short Sleeve Shirt for Women's & Girl's",
+  "longDescription": "The model (height 5'7\") is wearing a size S\nMaterial: Polyester, Pattern: Striped\nStyle-Elegant,Sexy,Sleeve Type:-Drop Shoulder,Neckline:-Collar,Sleeve Length: -Short Sleeve .\nType-Top,Shirt.Pattern Type: -Printed,Length:-Regular\nFit Type:-Regular Fit,Details-Button, Knot,Sheer: -No.",
+  "price": 1699,
+  "discountPrice": 999,
+  "currency": "INR",
+  "images": [
+    "https://m.media-amazon.com/images/I/71MZpB7rWIL._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/71nSn6AByJL._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/71o83zD3yHL._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/81PSm3sO9NL._SY879_.jpg"
+  ],
+  "category": "Women",
+  "subCategory": "Topwear",
+  "brand": "Aahwan",
+  "sizes": [
+    "S",
+    "M",
+    "L"
+  ],
+  "color": "Brown",
+  "material": "Polyester",
+  "topHighlights": [
+    "Material composition - Polyester",
+    " Pattern - Solid ",
+    "Fit type-Modern Fit ",
+    "Sleeve type-Long Sleeve"
+  ],
+  "specifications": {
+    "fabric": "Polyester",
+    "fit": "Modern Fit",
+    "sleeve": "Long Sleeve",
+    "pattern": "Solid"
+  },
+  "manufacturerDetails": {
+    "manufacturer": "Aahwan Creation",
+    "address": "Aahwan Creation Surat",
+    "countryOfOrigin": "India"
+  },
+  "ratings": 3.4,
+  "stock": 56,
+  "bestseller": false,
+  "date": {
+    "$date": "2026-06-24T14:10:26.852Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-24T14:10:26.853Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-24T14:10:26.853Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "p17",
+  "name": "Women's Denim",
+  "shortDescription": "Nifty Women's Denim Stretchable High Waist Baggy Jeans",
+  "longDescription": "Nifty Women's Denim Stretchable High Waist Baggy Jeans for Women 98% Cotton 2% Spandex",
+  "price": 4999,
+  "discountPrice": 3999,
+  "currency": "INR",
+  "images": [
+    "https://m.media-amazon.com/images/I/61MNdl7nrfL._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/61bniqLlGwL._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/71UaA5G62zL._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/71oVkXMBIfL._SY879_.jpg"
+  ],
+  "category": "Women",
+  "subCategory": "Bottomwear",
+  "brand": "Nifty",
+  "sizes": [
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "color": "Blue",
+  "material": "Cotton Blend",
+  "topHighlights": [
+    "Material type-Cotton Blend",
+    "Length-Long Length",
+    " Style-Classic",
+    "Closure type-Button"
+  ],
+  "specifications": {
+    "fabric": "Cotton Blend",
+    "fit": "Relaxed",
+    "sleeve": "Long Length",
+    "pattern": "Solid"
+  },
+  "manufacturerDetails": {
+    "manufacturer": "Sharma Sales",
+    "address": "Sharma Sales, 9/6479, Mukherjee Gali, Gandhi Nagar, Delhi-110031 Contact:niftydenims@gmail.com, +91-8287248374",
+    "countryOfOrigin": "India"
+  },
+  "ratings": 3.8,
+  "stock": 45,
+  "bestseller": false,
+  "date": {
+    "$date": "2026-06-24T14:32:28.443Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-24T14:32:28.443Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-24T14:32:28.443Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "p18",
+  "name": "Women Jeans Baggy",
+  "shortDescription": "Tagas Women's Jeans|Women Jeans Baggy |womensjeans high Waist||(WDJ-8)",
+  "longDescription": "Women's Jeans || Jeans for women || women pent ||women cargo jeans ||women jeans high rise||\nWaist Line: High Waist, Length: Cropped\nFit Type: Regular Fit, Material: Denim\nDetails: Button, Pocket, Zipper",
+  "price": 1299,
+  "discountPrice": 699,
+  "currency": "INR",
+  "images": [
+    "https://m.media-amazon.com/images/I/51VGgYUKb1L._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/71YYOzg1GwL._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/71b5FHC5QDL._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/71gJnhy4xEL._SY879_.jpg"
+  ],
+  "category": "Women",
+  "subCategory": "Bottomwear",
+  "brand": "Tagas",
+  "sizes": [
+    "S",
+    "M",
+    "L"
+  ],
+  "color": "Cream",
+  "material": "Denim",
+  "topHighlights": [
+    "Material type-Denim ",
+    "Length-Cropped length",
+    " Style-Modern ",
+    "Closure type-Button"
+  ],
+  "specifications": {
+    "fabric": "Denim",
+    "fit": "Regular fit",
+    "sleeve": "Cropped length",
+    "pattern": "Self Design"
+  },
+  "manufacturerDetails": {
+    "manufacturer": "Tiffny Corporation- Ankleshwar",
+    "address": "Tiffny Corporation- Ankleshwar -393001-tiffnycorporations@gmail.com, tiffnycorporations@gmail.com, -393001",
+    "countryOfOrigin": "India"
+  },
+  "ratings": 4.2,
+  "stock": 12,
+  "bestseller": true,
+  "date": {
+    "$date": "2026-06-24T14:40:07.557Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-24T14:40:07.558Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-24T14:40:07.558Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "p19",
+  "name": "Women Synthetic Sandals",
+  "shortDescription": "Metro Women Synthetic Sandals (40-2266)",
+  "longDescription": "Material:SYNTHETIC\nLifestyle:Casual\nHeel Type:Kitten\nHeel Height:2",
+  "price": 2599,
+  "discountPrice": 2299,
+  "currency": "INR",
+  "images": [
+    "https://m.media-amazon.com/images/I/61jXOljEoqL._SY695_.jpg",
+    "https://m.media-amazon.com/images/I/61wOtpQbhaL._SY695_.jpg",
+    "https://m.media-amazon.com/images/I/61uvLoAvp6L._SY695_.jpg",
+    "https://m.media-amazon.com/images/I/61eZFcLsFPL._SY695_.jpg"
+  ],
+  "category": "Women",
+  "subCategory": "Footwear",
+  "brand": "Metro",
+  "sizes": [
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+  ],
+  "color": "Black",
+  "material": "Synthetic",
+  "topHighlights": [
+    "Material type-Synthetic",
+    " Closure type-Slip On",
+    " Heel type-Kitten Heel",
+    " Water resistance level-Not Water Resistant"
+  ],
+  "specifications": {
+    "fabric": "Synthetic",
+    "fit": "Slip On",
+    "sleeve": "Kitten Heel",
+    "pattern": "Casual"
+  },
+  "manufacturerDetails": {
+    "manufacturer": "Metro Brands Ltd",
+    "address": "Metro Brands Ltd",
+    "countryOfOrigin": "India"
+  },
+  "ratings": 3.9,
+  "stock": 50,
+  "bestseller": false,
+  "date": {
+    "$date": "2026-06-24T14:47:07.044Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-24T14:47:07.045Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-24T14:47:07.045Z"
   },
   "__v": 0
 }]

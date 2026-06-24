@@ -1,4 +1,4 @@
-import React, { useContext, useMemo, useState } from "react";
+import React, { useContext, useEffect, useMemo, useState } from "react";
 import axios from "axios";
 import { DataAssestsApi } from "../Data/DataAssets";
 import { Link, useNavigate } from "react-router-dom";
@@ -6,7 +6,20 @@ import { Link, useNavigate } from "react-router-dom";
 const Collections = ({data}) => {
   const navigate=useNavigate()
   const [products, cartValue, setcartValue] = useContext(DataAssestsApi);
-
+   const getCart = async () => {
+    try {
+      const res = await axios.get(
+        "https://e-kart-3.onrender.com/api/v1/user/cart",
+        { withCredentials: true }
+      );
+      setcartValue(res.data.cart.length);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  useEffect(() => {
+  getCart()
+  }, [])
   const [filters, setFilters] = useState({
     category: [],
     subCategory: [],
