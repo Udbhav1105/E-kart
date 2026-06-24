@@ -4,7 +4,7 @@ import { DataAssestsApi } from "../../Data/DataAssets";
 import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
-  const [products] = useContext(DataAssestsApi);
+  const [products,cartValue,setcartValue] = useContext(DataAssestsApi);
   const [cart, setCart] = useState([]);
   const navigate = useNavigate();
 
@@ -128,6 +128,7 @@ const Cart = () => {
 
                       <button
                         onClick={async () => {
+                          setcartValue(prev=>prev-1)
                           await axios.post(
                             "https://e-kart-3.onrender.com/api/v1/user/cart/remove",
                             { _id: item._id },

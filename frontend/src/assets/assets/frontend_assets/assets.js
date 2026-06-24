@@ -95,655 +95,385 @@ export const assets = {
     cross_icon
 }
 
-export const products = [
-  // {
-  //   _id: "aaaaa",
-  //   name: "Van Heusen Men's Cotton Solid Regular Fit Collar Polo T-Shirt",
-  //   description: "Soft, breathable cotton top for everyday comfort.",
-  //   price: 100,
-  //   image: ['https://m.media-amazon.com/images/I/51xOEh5DKYL._SY550_.jpg','https://m.media-amazon.com/images/I/71+VN+UeiDL._SY550_.jpg','https://m.media-amazon.com/images/I/61fLx+N1YHL._SY550_.jpg','https://m.media-amazon.com/images/I/51xDbF+9xiL._SY550_.jpg'],
-  //   category: "Women",
-  //   subCategory: "Topwear",
-  //   sizes: ["S", "M", "L"],
-  //   date: 1716634345448,
-  //   bestseller: true
-  // },
-  // {
-  //   _id: "aaaab",
-  //   name: "Men Cotton T-Shirt",
-  //   description: "Lightweight cotton t-shirt with a regular fit.",
-  //   price: 200,
-  //   image: [p_img2_1,p_img2_2,p_img2_3,p_img2_4],
-  //   category: "Men",
-  //   subCategory: "Topwear",
-  //   sizes: ["M", "L", "XL"],
-  //   date: 1716621345448,
-  //   bestseller: true
-  // },
-  // {
-  //   _id: "aaaac",
-  //   name: "Girls Cotton Top",
-  //   description: "Comfortable cotton top for daily wear.",
-  //   price: 220,
-  //   image: [p_img3],
-  //   category: "Kids",
-  //   subCategory: "Topwear",
-  //   sizes: ["S", "L", "XL"],
-  //   date: 1716234545448,
-  //   bestseller: true
-  // },
-  // {
-  //   _id: "aaaad",
-  //   name: "Men Cotton T-Shirt",
-  //   description: "Classic cotton t-shirt with a comfortable fit.",
-  //   price: 110,
-  //   image: [p_img4],
-  //   category: "Men",
-  //   subCategory: "Topwear",
-  //   sizes: ["S", "M", "XXL"],
-  //   date: 1716621345448,
-  //   bestseller: true
-  // },
-  // {
-  //   _id: "aaaae",
-  //   name: "Women Cotton Top",
-  //   description: "Soft cotton top with a clean modern look.",
-  //   price: 130,
-  //   image: [p_img5],
-  //   category: "Women",
-  //   subCategory: "Topwear",
-  //   sizes: ["M", "L", "XL"],
-  //   date: 1716622345448,
-  //   bestseller: true
-  // },
-  // {
-  //   _id: "aaaaf",
-  //   name: "Girls Cotton Top",
-  //   description: "Lightweight cotton top for everyday comfort.",
-  //   price: 140,
-  //   image: [p_img6],
-  //   category: "Kids",
-  //   subCategory: "Topwear",
-  //   sizes: ["S", "L", "XL"],
-  //   date: 1716623423448,
-  //   bestseller: true
-  // },
-  // {
-  //   _id: "aaaag",
-  //   name: "Men Tapered Trousers",
-  //   description: "Tapered fit trousers with a modern style.",
-  //   price: 190,
-  //   image: [p_img7],
-  //   category: "Men",
-  //   subCategory: "Bottomwear",
-  //   sizes: ["S", "L", "XL"],
-  //   date: 1716621542448,
-  //   bestseller: false
-  // },
-  // {
-  //   _id: "aaaah",
-  //   name: "Men Cotton T-Shirt",
-  //   description: "Soft cotton t-shirt with a relaxed fit.",
-  //   price: 140,
-  //   image: [p_img8],
-  //   category: "Men",
-  //   subCategory: "Topwear",
-  //   sizes: ["S", "M", "L", "XL"],
-  //   date: 1716622345448,
-  //   bestseller: false
-  // },
-  // {
-  //   _id: "aaaai",
-  //   name: "Girls Cotton Top",
-  //   description: "Comfortable cotton top for daily use.",
-  //   price: 100,
-  //   image: [p_img9],
-  //   category: "Kids",
-  //   subCategory: "Topwear",
-  //   sizes: ["M", "L", "XL"],
-  //   date: 1716621235448,
-  //   bestseller: false
-  // },
-  // {
-  //   _id: "aaaaj",
-  //   name: "Men Tapered Trousers",
-  //   description: "Modern tapered trousers with a clean fit.",
-  //   price: 110,
-  //   image: [p_img10],
-  //   category: "Men",
-  //   subCategory: "Bottomwear",
-  //   sizes: ["S", "L", "XL"],
-  //   date: 1716622235448,
-  //   bestseller: false
-  // },
-  // {
-  //   _id: "aaaak",
-  //   name: "Men Cotton T-Shirt",
-  //   description: "Breathable cotton t-shirt for everyday wear.",
-  //   price: 120,
-  //   image: [p_img11],
-  //   category: "Men",
-  //   subCategory: "Topwear",
-  //   sizes: ["S", "M", "L"],
-  //   date: 1716623345448,
-  //   bestseller: false
-  // },
-  // {
-  //   _id: "aaaal",
-  //   name: "Men Cotton T-Shirt",
-  //   description: "Soft cotton t-shirt with a modern fit.",
-  //   price: 150,
-  //   image: [p_img12],
-  //   category: "Men",
-  //   subCategory: "Topwear",
-  //   sizes: ["S", "M", "L", "XL"],
-  //   date: 1716624445448,
-  //   bestseller: false
-  // },
-  // {
-  //   _id: "aaaam",
-  //   name: "Women Cotton Top",
-  //   description: "Stylish cotton top for everyday comfort.",
-  //   price: 130,
-  //   image: [p_img13],
-  //   category: "Women",
-  //   subCategory: "Topwear",
-  //   sizes: ["S", "M", "L", "XL"],
-  //   date: 1716625545448,
-  //   bestseller: false
-  // },
-  // {
-  //   _id: "aaaan",
-  //   name: "Boys Cotton T-Shirt",
-  //   description: "Soft cotton t-shirt for all-day comfort.",
-  //   price: 160,
-  //   image: [p_img14],
-  //   category: "Kids",
-  //   subCategory: "Topwear",
-  //   sizes: ["S", "M", "L", "XL"],
-  //   date: 1716626645448,
-  //   bestseller: false
-  // },
-  // {
-  //   _id: "aaaao",
-  //   name: "Men Tapered Trousers",
-  //   description: "Slim tapered trousers with a clean look.",
-  //   price: 140,
-  //   image: [p_img15],
-  //   category: "Men",
-  //   subCategory: "Bottomwear",
-  //   sizes: ["S", "M", "L", "XL"],
-  //   date: 1716627745448,
-  //   bestseller: false
-  // },
-  // {
-  //   _id: "aaaap",
-  //   name: "Girls Cotton Top",
-  //   description: "Comfortable cotton top with a soft feel.",
-  //   price: 170,
-  //   image: [p_img16],
-  //   category: "Kids",
-  //   subCategory: "Topwear",
-  //   sizes: ["S", "M", "L", "XL"],
-  //   date: 1716628845448,
-  //   bestseller: false
-  // },
-  // {
-  //   _id: "aaaaq",
-  //   name: "Men Tapered Trousers",
-  //   description: "Modern trousers with a tapered fit.",
-  //   price: 150,
-  //   image: [p_img17],
-  //   category: "Men",
-  //   subCategory: "Bottomwear",
-  //   sizes: ["S", "M", "L", "XL"],
-  //   date: 1716629945448,
-  //   bestseller: false
-  // },
-  // {
-  //   _id: "aaaar",
-  //   name: "Boys Cotton T-Shirt",
-  //   description: "Lightweight cotton t-shirt for daily wear.",
-  //   price: 180,
-  //   image: [p_img18],
-  //   category: "Kids",
-  //   subCategory: "Topwear",
-  //   sizes: ["S", "M", "L", "XL"],
-  //   date: 1716631045448,
-  //   bestseller: false
-  // },
-  // {
-  //   _id: "aaaat",
-  //   name: "Women Palazzo Pants",
-  //   description: "Flowy palazzo pants with a relaxed fit.",
-  //   price: 190,
-  //   image: [p_img20],
-  //   category: "Women",
-  //   subCategory: "Bottomwear",
-  //   sizes: ["S", "M", "L", "XL"],
-  //   date: 1716633245448,
-  //   bestseller: false
-  // },
-  // {
-  //   _id: "aaaau",
-  //   name: "Women Zip Jacket",
-  //   description: "Comfortable jacket for casual and winter wear.",
-  //   price: 170,
-  //   image: [p_img21],
-  //   category: "Women",
-  //   subCategory: "Winterwear",
-  //   sizes: ["S", "M", "L", "XL"],
-  //   date: 1716634345448,
-  //   bestseller: false
-  // }
-
-  {
-    _id: "p001",
-    name: "Men's Cotton Polo T-Shirt",
-    shortDescription: "Soft breathable cotton polo for daily wear.",
-    longDescription:
-      "This premium cotton polo t-shirt is designed for ultimate comfort and durability. Its breathable fabric ensures all-day freshness, while the classic collar design makes it suitable for both casual and semi-formal occasions.",
-    price: 999,
-    discountPrice: 799,
-    currency: "INR",
-    images: [
-      "https://images.unsplash.com/photo-1585386959984-a4155224a1ad",
-      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
-    ],
-    category: "Men",
-    subCategory: "Topwear",
-    brand: "Urban Threads",
-    sizes: ["S", "M", "L", "XL"],
-    color: "Navy Blue",
-    material: "100% Cotton",
-    topHighlights: [
-      "Breathable cotton fabric",
-      "Classic polo collar",
-      "Regular fit",
-      "Soft texture"
-    ],
-    specifications: {
-      fabric: "Cotton",
-      fit: "Regular",
-      sleeve: "Half Sleeve",
-      pattern: "Solid"
-    },
-    manufacturerDetails: {
-      manufacturer: "Urban Threads Pvt Ltd",
-      address: "Delhi, India",
-      countryOfOrigin: "India"
-    },
-    ratings: 4.3,
-    reviewsCount: 1200,
-    stock: 40,
-    bestseller: true,
-    date: Date.now()
+export const products = [{
+  "_id": "p1",
+  "name": "DEELMO Men’s Stylish Cotton Blend Casual Shirt ||",
+  "shortDescription": "Full Sleeve Button-Down Shirt with Dual Flap Pockets || Comfortable Breathable Fabric || Perfect for Casual Office and Outing Wear",
+  "longDescription": "Crafted from premium cotton blend fabric for soft touch and all-day comfort || ensures durability with a modern casual appeal suitable for every season\nDesigned with full sleeves and button cuffs || allows you to roll up easily for a relaxed look or keep buttoned for a neat formal appearance\nFeatures two front flap pockets with secure buttons || adds functional utility and enhances the shirt’s classic urban style\nPerfect for layering over a t-shirt or wearing solo || ideal for casual outings office meetings or weekend hangouts for a versatile fashion statement\nPrecision stitching with structured collar and curved hemline || ensures a sharp fit that complements both jeans and chinos effortlessly\n",
+  "price": 2600,
+  "discountPrice": 1800,
+  "currency": "INR",
+  "images": [
+    "https://m.media-amazon.com/images/I/61qMMGkDHfL._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/61qMMGkDHfL._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/61qMMGkDHfL._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/61qMMGkDHfL._SY879_.jpg"
+  ],
+  "category": "Men",
+  "subCategory": "Topwear",
+  "brand": "Deelmo",
+  "sizes": [
+    "s",
+    "m",
+    "l",
+    "xl",
+    "xxl"
+  ],
+  "color": "darkorange",
+  "material": "Cotton Blend",
+  "topHighlights": [
+    "Comfortable Breathable Fabric || Perfect for Casual Office and Outing Wear"
+  ],
+  "specifications": {
+    "fabric": "Cotton Blend",
+    "fit": "Regular Fit",
+    "sleeve": "Long Sleeve",
+    "pattern": "Solid"
   },
-
-  {
-    _id: "p002",
-    name: "Women's Floral Summer Top",
-    shortDescription: "Lightweight floral top for a stylish look.",
-    longDescription:
-      "Stay stylish and comfortable with this floral printed top. Designed with lightweight fabric, it provides a breezy feel perfect for summer days and casual outings.",
-    price: 1299,
-    discountPrice: 999,
-    currency: "INR",
-    images: [
-      "https://images.unsplash.com/photo-1520975916090-3105956dac38",
-      "https://images.unsplash.com/photo-1490481651871-ab68de25d43d"
-    ],
-    category: "Women",
-    subCategory: "Topwear",
-    brand: "StyleAura",
-    sizes: ["S", "M", "L"],
-    color: "White",
-    material: "Rayon",
-    topHighlights: [
-      "Floral print",
-      "Lightweight fabric",
-      "Comfort fit",
-      "Perfect for summer"
-    ],
-    specifications: {
-      fabric: "Rayon",
-      fit: "Regular",
-      sleeve: "3/4 Sleeve",
-      pattern: "Printed"
-    },
-    manufacturerDetails: {
-      manufacturer: "StyleAura Pvt Ltd",
-      address: "Mumbai, India",
-      countryOfOrigin: "India"
-    },
-    ratings: 4.1,
-    reviewsCount: 860,
-    stock: 25,
-    bestseller: false,
-    date: Date.now()
+  "manufacturerDetails": {
+    "manufacturer": "DEELMO, DEELMO",
+    "address": "ertfyghujikl",
+    "countryOfOrigin": "India"
   },
-
-  {
-    _id: "p003",
-    name: "Men's Slim Fit Denim Jeans",
-    shortDescription: "Stretchable slim fit jeans for everyday comfort.",
-    longDescription:
-      "Crafted with premium denim, these slim-fit jeans offer durability and flexibility. Ideal for daily wear, they combine modern style with long-lasting comfort.",
-    price: 2499,
-    discountPrice: 1999,
-    currency: "INR",
-    images: [
-      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246",
-      "https://images.unsplash.com/photo-1475178626620-a4d074967452"
-    ],
-    category: "Men",
-    subCategory: "Bottomwear",
-    brand: "DenimCo",
-    sizes: ["30", "32", "34", "36"],
-    color: "Dark Blue",
-    material: "Denim",
-    topHighlights: [
-      "Stretchable fabric",
-      "Slim fit",
-      "Durable",
-      "Classic style"
-    ],
-    specifications: {
-      fabric: "Denim",
-      fit: "Slim",
-      closure: "Zip",
-      pattern: "Solid"
-    },
-    manufacturerDetails: {
-      manufacturer: "DenimCo India",
-      address: "Bangalore, India",
-      countryOfOrigin: "India"
-    },
-    ratings: 4.5,
-    reviewsCount: 2000,
-    stock: 30,
-    bestseller: true,
-    date: Date.now()
+  "ratings": 5,
+  "stock": 25,
+  "bestseller": false,
+  "date": {
+    "$date": "2026-06-24T08:31:55.909Z"
   },
-
-  {
-    _id: "p004",
-    name: "Men's Casual Hoodie",
-    shortDescription: "Warm and stylish hoodie for winters.",
-    longDescription:
-      "Stay cozy with this comfortable hoodie made from soft fleece fabric. Perfect for chilly days, it offers both warmth and style.",
-    price: 1999,
-    discountPrice: 1499,
-    currency: "INR",
-    images: [
-      "https://images.unsplash.com/photo-1556821840-3a63f95609a7",
-      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf"
-    ],
-    category: "Men",
-    subCategory: "Winterwear",
-    brand: "WarmWear",
-    sizes: ["M", "L", "XL"],
-    color: "Black",
-    material: "Fleece",
-    topHighlights: [
-      "Warm fleece fabric",
-      "Adjustable hood",
-      "Comfort fit"
-    ],
-    specifications: {
-      fabric: "Fleece",
-      fit: "Regular",
-      sleeve: "Full Sleeve"
-    },
-    manufacturerDetails: {
-      manufacturer: "WarmWear Ltd",
-      address: "Noida, India",
-      countryOfOrigin: "India"
-    },
-    ratings: 4.4,
-    reviewsCount: 950,
-    stock: 20,
-    bestseller: false,
-    date: Date.now()
+  "createdAt": {
+    "$date": "2026-06-24T08:31:55.910Z"
   },
-
-  {
-    _id: "p005",
-    name: "Women's High Waist Jeans",
-    shortDescription: "Trendy high waist denim jeans.",
-    longDescription:
-      "Designed for a modern look, these high-waist jeans provide a flattering fit and exceptional comfort. Perfect for pairing with crop tops and shirts.",
-    price: 1999,
-    discountPrice: 1599,
-    currency: "INR",
-    images: [
-      "https://images.unsplash.com/photo-1582418702059-97ebafb35d09",
-      "https://images.unsplash.com/photo-1584370848010-d7fe6bc767ec"
-    ],
-    category: "Women",
-    subCategory: "Bottomwear",
-    brand: "Trendify",
-    sizes: ["26", "28", "30", "32"],
-    color: "Blue",
-    material: "Denim",
-    topHighlights: [
-      "High waist design",
-      "Stretchable fabric",
-      "Comfort fit"
-    ],
-    specifications: {
-      fabric: "Denim",
-      fit: "Slim"
-    },
-    manufacturerDetails: {
-      manufacturer: "Trendify Pvt Ltd",
-      address: "Delhi, India",
-      countryOfOrigin: "India"
-    },
-    ratings: 4.2,
-    reviewsCount: 670,
-    stock: 35,
-    bestseller: true,
-    date: Date.now()
+  "updatedAt": {
+    "$date": "2026-06-24T08:31:55.910Z"
   },
-
-  {
-    _id: "p006",
-    name: "Men's Formal Shirt",
-    shortDescription: "Perfect shirt for office wear.",
-    longDescription:
-      "A crisp formal shirt made from high-quality cotton blend fabric. Ideal for professional settings and formal occasions.",
-    price: 1499,
-    discountPrice: 1199,
-    currency: "INR",
-    images: [
-      "https://images.unsplash.com/photo-1603252109303-2751441dd157",
-      "https://images.unsplash.com/photo-1598033129183-c4f50c736f10"
-    ],
-    category: "Men",
-    subCategory: "Formalwear",
-    brand: "OfficePro",
-    sizes: ["M", "L", "XL"],
-    color: "White",
-    material: "Cotton Blend",
-    topHighlights: [
-      "Wrinkle resistant",
-      "Formal design",
-      "Breathable"
-    ],
-    specifications: {
-      fabric: "Cotton Blend",
-      fit: "Regular"
-    },
-    manufacturerDetails: {
-      manufacturer: "OfficePro Ltd",
-      address: "Gurgaon, India",
-      countryOfOrigin: "India"
-    },
-    ratings: 4.3,
-    reviewsCount: 500,
-    stock: 45,
-    bestseller: false,
-    date: Date.now()
+  "__v": 0
+},
+{
+  "_id": "p2",
+  "name": "Light Green T-Shirt",
+  "shortDescription": "COMBRAIDED Men Self Design Polo Neck Polycotton Light Green T-Shirt",
+  "longDescription": "COMBRAIDED Men Self Design Polo Neck Polycotton Light Green T-Shirt",
+  "price": 1499,
+  "discountPrice": 267,
+  "currency": "INR",
+  "images": [
+    "https://rukminim1.flixcart.com/image/1280/1280/xif0q/t-shirt/a/a/e/xl-2mariio6-mozero-original-imahnfybdhncc5ns.jpeg?q=90",
+    "https://rukminim1.flixcart.com/image/1280/1280/xif0q/t-shirt/i/e/j/xxl-mn-mario-metronaut-original-imahnbugufzm4saq.jpeg?q=90"
+  ],
+  "category": "Men",
+  "subCategory": "Topwear",
+  "brand": "COMBRAIDED",
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL"
+  ],
+  "color": "Light Green",
+  "material": "Polycotton",
+  "topHighlights": [
+    ""
+  ],
+  "specifications": {
+    "fabric": "Polycotton",
+    "fit": "",
+    "sleeve": "Half Sleeve",
+    "pattern": "Self Design"
   },
-
-  {
-    _id: "p007",
-    name: "Women's Summer Dress",
-    shortDescription: "Lightweight and stylish summer dress.",
-    longDescription:
-      "Enjoy comfort and elegance with this summer dress crafted from breathable fabric. Perfect for vacations and casual outings.",
-    price: 1799,
-    discountPrice: 1399,
-    currency: "INR",
-    images: [
-      "https://images.unsplash.com/photo-1496747611176-843222e1e57c",
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1"
-    ],
-    category: "Women",
-    subCategory: "Dresses",
-    brand: "FashionHub",
-    sizes: ["S", "M", "L"],
-    color: "Yellow",
-    material: "Cotton",
-    topHighlights: [
-      "Lightweight",
-      "Breathable",
-      "Trendy design"
-    ],
-    specifications: {
-      fabric: "Cotton",
-      fit: "Regular"
-    },
-    manufacturerDetails: {
-      manufacturer: "FashionHub India",
-      address: "Jaipur, India",
-      countryOfOrigin: "India"
-    },
-    ratings: 4.6,
-    reviewsCount: 1300,
-    stock: 15,
-    bestseller: true,
-    date: Date.now()
+  "manufacturerDetails": {
+    "manufacturer": "COMBRAIDED.HINDUSTAN",
+    "address": "COMBRAIDED.HINDUSTAN",
+    "countryOfOrigin": "India"
   },
-
-  {
-    _id: "p008",
-    name: "Men's Sports T-Shirt",
-    shortDescription: "Quick-dry sports t-shirt.",
-    longDescription:
-      "Designed for active lifestyles, this sports t-shirt features moisture-wicking fabric to keep you dry during workouts.",
-    price: 899,
-    discountPrice: 699,
-    currency: "INR",
-    images: [
-      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438",
-      "https://images.unsplash.com/photo-1526406915894-7bcd65f60845"
-    ],
-    category: "Men",
-    subCategory: "Sportswear",
-    brand: "FitGear",
-    sizes: ["M", "L", "XL"],
-    color: "Grey",
-    material: "Polyester",
-    topHighlights: [
-      "Quick dry",
-      "Lightweight",
-      "Stretchable"
-    ],
-    specifications: {
-      fabric: "Polyester",
-      fit: "Slim"
-    },
-    manufacturerDetails: {
-      manufacturer: "FitGear Pvt Ltd",
-      address: "Pune, India",
-      countryOfOrigin: "India"
-    },
-    ratings: 4.2,
-    reviewsCount: 400,
-    stock: 60,
-    bestseller: false,
-    date: Date.now()
+  "ratings": 3.8,
+  "stock": 10,
+  "bestseller": false,
+  "date": {
+    "$date": "2026-06-24T13:10:06.501Z"
   },
-
-  {
-    _id: "p009",
-    name: "Women's Kurti",
-    shortDescription: "Elegant ethnic kurti for daily wear.",
-    longDescription:
-      "This beautifully designed kurti combines traditional style with modern comfort. Ideal for daily wear and festive occasions.",
-    price: 1199,
-    discountPrice: 899,
-    currency: "INR",
-    images: [
-      "https://images.unsplash.com/photo-1618354691438-25bc04584c23",
-      "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633"
-    ],
-    category: "Women",
-    subCategory: "Ethnic",
-    brand: "EthniStyle",
-    sizes: ["S", "M", "L", "XL"],
-    color: "Pink",
-    material: "Cotton",
-    topHighlights: [
-      "Ethnic design",
-      "Comfortable fabric",
-      "Daily wear"
-    ],
-    specifications: {
-      fabric: "Cotton",
-      fit: "Regular"
-    },
-    manufacturerDetails: {
-      manufacturer: "EthniStyle Pvt Ltd",
-      address: "Lucknow, India",
-      countryOfOrigin: "India"
-    },
-    ratings: 4.4,
-    reviewsCount: 780,
-    stock: 28,
-    bestseller: true,
-    date: Date.now()
+  "createdAt": {
+    "$date": "2026-06-24T13:10:06.503Z"
   },
-
-  {
-    _id: "p010",
-    name: "Men's Leather Jacket",
-    shortDescription: "Premium leather jacket for a bold look.",
-    longDescription:
-      "Make a bold statement with this premium leather jacket. Designed for style and durability, it is perfect for winter outings.",
-    price: 4999,
-    discountPrice: 3999,
-    currency: "INR",
-    images: [
-      "https://images.unsplash.com/photo-1520975954732-35dd22299614",
-      "https://images.unsplash.com/photo-1516826957135-700dedea698c"
-    ],
-    category: "Men",
-    subCategory: "Winterwear",
-    brand: "LeatherLux",
-    sizes: ["M", "L", "XL"],
-    color: "Brown",
-    material: "Genuine Leather",
-    topHighlights: [
-      "Premium leather",
-      "Stylish design",
-      "Durable"
-    ],
-    specifications: {
-      fabric: "Leather",
-      fit: "Regular"
-    },
-    manufacturerDetails: {
-      manufacturer: "LeatherLux India",
-      address: "Delhi, India",
-      countryOfOrigin: "India"
-    },
-    ratings: 4.7,
-    reviewsCount: 1500,
-    stock: 10,
-    bestseller: true,
-    date: Date.now()
-  }
-]
+  "updatedAt": {
+    "$date": "2026-06-24T13:10:06.503Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "p4",
+  "name": "Levi's 025 Men's Premium Soft Cotton Solid",
+  "shortDescription": "Levi's 025 Men's Premium Soft Cotton Solid T-Shirt - Round Neck, Short Sleeves with Side Branding (Pack of 1)",
+  "longDescription": "100% COTTON FABRIC: This t-shirt offers breathability with soft stretch for a smooth & comfortable innerwear fit.\nCREW ROUND NECK FIT: Designed with a crew round neck and short sleeves, it gives a clean everyday silhouette that works well as a standalone t-shirt or base layer.\nCOOL & BREATHABLE: Designed to stay cool, the breathable fabric supports airflow and helps maintain comfort through movement.\nSOFT & DURABLE COMFORT: Built with soft yet durable fabric, this t-shirt is made to hold comfort and shape through regular use.\nTAGLESS COMFORT: Enhaced softness and smoother feel with a tag free design to minimize skin irritation and chaffing .\n",
+  "price": 2599,
+  "discountPrice": 1599,
+  "currency": "INR",
+  "images": [
+    "https://m.media-amazon.com/images/I/51d6wWFtkcL._SY741_.jpg",
+    "https://m.media-amazon.com/images/I/51PaBe-zCHL._SY741_.jpg",
+    "https://m.media-amazon.com/images/I/51PaBe-zCHL._SY741_.jpg",
+    "https://m.media-amazon.com/images/I/51DVDEYUPgL._SY741_.jpg"
+  ],
+  "category": "Men",
+  "subCategory": "Topwear",
+  "brand": "levis",
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "color": " White(Light Grey Mel)",
+  "material": "100% Cotton",
+  "topHighlights": [
+    "84% positive ratings from 100K+ customers",
+    "   100K+ recent orders from this brand ",
+    "  12+ years on Amazon"
+  ],
+  "specifications": {
+    "fabric": "100% Cotton",
+    "fit": "Regular Fit",
+    "sleeve": " Half Sleeve",
+    "pattern": "Solid"
+  },
+  "manufacturerDetails": {
+    "manufacturer": "DIXCY TEXTILES PVT.LTD,DIXCY CAMPUS,TIRPU",
+    "address": " TEXTILES PVT.LTD,DIXCY CAMPUS,TIRPUR-638812-INDIA-1800-102-5066, Modenik Lifestyle Private Limited",
+    "countryOfOrigin": "India"
+  },
+  "ratings": 4.5,
+  "stock": 22,
+  "bestseller": true,
+  "date": {
+    "$date": "2026-06-24T13:43:13.216Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-24T13:43:13.223Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-24T13:43:13.223Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "p5",
+  "name": "Peter England Men's Regular Fit Insignia Half Sleeve Polo T-Shirt",
+  "shortDescription": "Peter England Men's Regular Fit Insignia Half Sleeve Polo T-Shirt | Cotton Rich | Premium Pique Weave",
+  "longDescription": "About this item\nHalf Sleeve Polo T-shirt\nSoft Handfeel\nMaterial composition: 60% Cotton & 40% Polyester\nPique Weave",
+  "price": 999,
+  "discountPrice": 699,
+  "currency": "INR",
+  "images": [
+    "https://m.media-amazon.com/images/I/91g0lfDWFkL._SX569_.jpg",
+    "https://m.media-amazon.com/images/I/61vFdmD5N3L._SX569_.jpg",
+    "https://m.media-amazon.com/images/I/91n819Q7r0L._SX569_.jpg",
+    "https://m.media-amazon.com/images/I/71xGcrUnGwL._SX569_.jpg"
+  ],
+  "category": "Men",
+  "subCategory": "Topwear",
+  "brand": "Peter England",
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "color": " Gibraltar Sea",
+  "material": "60% Polyester, 40% Cotton",
+  "topHighlights": [
+    "84% positive ratings from 100K+ customers ",
+    "  100K+ recent orders from this brand",
+    "   11+ years on Amazon"
+  ],
+  "specifications": {
+    "fabric": "60% Polyester, 40% Cotton",
+    "fit": "Regular Fit",
+    "sleeve": "Half Sleeve",
+    "pattern": "Solid"
+  },
+  "manufacturerDetails": {
+    "manufacturer": "ABFRL, SIMBUS TECHNOLOGIES PVT LTD,9",
+    "address": ",951,1ST FLOOR,24TH MAIN ROAD,R.K COLONY,MARENAHALLI,1ST PHASE,J.P. NAGAR-560078,BANGALORE,Karnataka,India",
+    "countryOfOrigin": "India"
+  },
+  "ratings": 4.7,
+  "stock": 12,
+  "bestseller": false,
+  "date": {
+    "$date": "2026-06-24T13:55:13.021Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-24T13:55:13.023Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-24T13:55:13.023Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "p6",
+  "name": "Jack&Jones Bootcut High Rise Jeans for Men",
+  "shortDescription": "Jack&Jones Bootcut High Rise Jeans for Men",
+  "longDescription": "Fabric Care Description :: Cotton 66%, Polyester 33%, Elastane 1% Machine wash\nPattern Type :: Solid\nRise Type :: High Rise\nClosure Type :: Button & zipper\nFit Type :: Bootcut",
+  "price": 2699,
+  "discountPrice": 1699,
+  "currency": "INR",
+  "images": [
+    "https://m.media-amazon.com/images/I/5137KxNCDwL._SY741_.jpg",
+    "https://m.media-amazon.com/images/I/51x3sQYp6iL._SY741_.jpg",
+    "https://m.media-amazon.com/images/I/619AEJpoo0L._SY741_.jpg",
+    "https://m.media-amazon.com/images/I/51qN2SJkBcL._SY741_.jpg"
+  ],
+  "category": "Men",
+  "subCategory": "Bottomwear",
+  "brand": "JAck&Jones",
+  "sizes": [
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "color": " Medium Blue Denim",
+  "material": "Cotton Blend",
+  "topHighlights": [
+    "79% positive ratings from 50K+ customers   ",
+    "50K+ recent orders from this brand  ",
+    " 12+ years on Amazon"
+  ],
+  "specifications": {
+    "fabric": "Cotton Blend",
+    "fit": "High Rise",
+    "sleeve": "",
+    "pattern": "Standard Length"
+  },
+  "manufacturerDetails": {
+    "manufacturer": "Dekko Garments Limited, Dekko Garments Limited Nayanpur, Mawna,Gazipur,1703",
+    "address": "Best United India comforts PVT.LTD, The Lalit Residency, Next to The Lalit Mumbai,Sahar Airport road, Sahar, Andheri (E), 400059 Mumbai, India.",
+    "countryOfOrigin": "India"
+  },
+  "ratings": 4.2,
+  "stock": -2,
+  "bestseller": false,
+  "date": {
+    "$date": "2026-06-24T13:59:48.884Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-24T13:59:48.885Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-24T13:59:48.885Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "p15",
+  "name": "Women Top",
+  "shortDescription": "Tokyo Talkies Women Tops",
+  "longDescription": "📝🛍️ Product Description: Figure‑flattering cuts and statement details to elevate any outfit. Soft, stretch‑friendly fabrics for comfort that follows your every move. Ideal layering pieces or stand‑alone statements for versatile looks.\n🧶👕 Fabric: 67% Polyester/33% Cotton fabric is A cozy blend that combines the softness of cotton with the durability of polyester. Perfect for casual wear.\n👔✂️ Sleeves: Classic short sleeves for a cool, casual look. Perfect for everyday wear and warmer days.\n🎭💼 Occasion: This Women's Self Design WHITE Short Sleeves Sweet Heart Neck Casual Tops Great for daily wear, coffee outings, or casual Fridays at work. This tops offer comfort with style and can be easily dressed up with accessories.\n🧺🧴Care Instructions: Machine wash cold water using a mild detergent. Avoid bleach to maintain fabric quality. Tumble dry on low or hang to dry; iron on low heat if needed.",
+  "price": 1399,
+  "discountPrice": 399,
+  "currency": "INR",
+  "images": [
+    "https://m.media-amazon.com/images/I/71KRDK1AyNL._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/71UZUdXdjVL._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/71+bvxU7zdL._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/71+bvxU7zdL._SY879_.jpg"
+  ],
+  "category": "Women",
+  "subCategory": "Topwear",
+  "brand": "Tokyo Talkies",
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL"
+  ],
+  "color": "White",
+  "material": "67/33 POLYCOTTON",
+  "topHighlights": [
+    "Material composition - 67/33 POLYCOTTON",
+    " Fit type - Regular Fit",
+    " Sleeve type - Short Sleeve",
+    " Style - Classic"
+  ],
+  "specifications": {
+    "fabric": "67/33 POLYCOTTON",
+    "fit": "Regular Fit",
+    "sleeve": "Short Sleeve",
+    "pattern": "Self Design"
+  },
+  "manufacturerDetails": {
+    "manufacturer": "Brand Studio Lifestyle Pvt Ltd",
+    "address": "Brand Studio Lifestyle Pvt Ltd, Brand Studio Lifestyle Pvt Ltd. 113, Krishna reddy Ind Area, 7th Mile, Kudlu Gate, Hosur Road, Bangalore 560068",
+    "countryOfOrigin": "India"
+  },
+  "ratings": 4,
+  "stock": 25,
+  "bestseller": true,
+  "date": {
+    "$date": "2026-06-24T14:02:56.673Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-24T14:02:56.674Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-24T14:02:56.674Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "P7",
+  "name": "KOTTY Mens Regular Fit",
+  "shortDescription": "KOTTY Mens Regular Fit|Classic Design with Stylish Look |Day Comfort|Mide Rise Strachable Jeans",
+  "longDescription": "Built for Action: Heavy-duty denim with reinforced seams for extra durability.\nVersatile Styling: Perfect for casual, streetwear, hip-hop, and rugged outdoor looks.\nAll-Day Comfort: Soft, breathable cotton-blend denim for non-stop wearability.\nVintage Meets Modern: Classic designs reimagined for today’s fashion.\nEasy Maintenance – Fade-resistant and machine washable.",
+  "price": 1999,
+  "discountPrice": 499,
+  "currency": "INR",
+  "images": [
+    "https://m.media-amazon.com/images/I/61dFcpPdJkL._SY741_.jpg",
+    "https://m.media-amazon.com/images/I/81+cFoDdC2L._SY741_.jpg",
+    "https://m.media-amazon.com/images/I/910FHI2bNmL._SY741_.jpg",
+    "https://m.media-amazon.com/images/I/8133RQHrBuL._SY741_.jpg"
+  ],
+  "category": "Men",
+  "subCategory": "Bottomwear",
+  "brand": "KOTTY",
+  "sizes": [
+    "D",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "color": " Light Blue",
+  "material": "Cotton Blend",
+  "topHighlights": [
+    ""
+  ],
+  "specifications": {
+    "fabric": "Cotton Blend",
+    "fit": "Baggy",
+    "sleeve": "30 x 20 x 3 Centimeters",
+    "pattern": "Solid"
+  },
+  "manufacturerDetails": {
+    "manufacturer": "KOTTY Lifestyle Pvt Ltd,",
+    "address": "GB-65,Bharat Vihar,Lakkarpur, Faridabad,Haryana,121009, KOTTY Lifestyle Pvt Ltd, GB-65,Bharat Vihar,Lakkarpur, Faridabad,Haryana,121009",
+    "countryOfOrigin": "India"
+  },
+  "ratings": 3.8,
+  "stock": 25,
+  "bestseller": false,
+  "date": {
+    "$date": "2026-06-24T14:04:09.379Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-24T14:04:09.381Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-24T14:04:09.381Z"
+  },
+  "__v": 0
+}]

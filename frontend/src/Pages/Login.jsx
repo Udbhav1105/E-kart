@@ -46,6 +46,8 @@ const Login = () => {
       setTimeout(() => {
         if (role === "user") {
           navigate("/collection");
+          window.location.reload();
+
         } else {
           navigate("/admin/home");
         }

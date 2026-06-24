@@ -24,12 +24,12 @@ const View = () => {
 
   const sizes = ["XS", "S", "M", "L", "XL", "XXL"];
   const discount = Math.round(
-    ((items.price - items.discountPrice) / items.price) * 100
+    ((items.price - items.discountPrice) / items.price) * 100,
   );
 
   const stars = Array.from(
     { length: 5 },
-    (_, i) => i < Math.floor(items.ratings || 0)
+    (_, i) => i < Math.floor(items.ratings || 0),
   );
 
   return (
@@ -42,9 +42,7 @@ const View = () => {
                 key={i}
                 onClick={() => setSelectedImg(i)}
                 className={`w-16 h-20 rounded-lg overflow-hidden cursor-pointer border-2 ${
-                  selectedImg === i
-                    ? "border-[#163c4a]"
-                    : "border-gray-200"
+                  selectedImg === i ? "border-[#163c4a]" : "border-gray-200"
                 }`}
               >
                 <img
@@ -85,7 +83,10 @@ const View = () => {
 
           <div className="flex gap-1 mb-5">
             {stars.map((full, i) => (
-              <span key={i} className={full ? "text-amber-400" : "text-gray-300"}>
+              <span
+                key={i}
+                className={full ? "text-amber-400" : "text-gray-300"}
+              >
                 ★
               </span>
             ))}
@@ -110,9 +111,7 @@ const View = () => {
                   key={sz}
                   onClick={() => setSelectedSize(sz)}
                   className={`w-14 h-11 rounded-lg border ${
-                    selectedSize === sz
-                      ? "bg-[#163c4a] text-white"
-                      : "bg-white"
+                    selectedSize === sz ? "bg-[#163c4a] text-white" : "bg-white"
                   }`}
                 >
                   {sz}
@@ -130,25 +129,119 @@ const View = () => {
               Buy Now
             </button>
           </div>
+          <div className="flex flex-col gap-3">
+          <div className="bg-white p-4 rounded-xl shadow">
+            <h3 className="font-semibold text-sm text-gray-500">Material</h3>
 
-          <div className="flex border-b mb-5">
-            {["description", "details", "reviews"].map((t) => (
-              <button
-                key={t}
-                onClick={() => setTab(t)}
-                className={`px-5 py-2 ${
-                  tab === t ? "font-bold border-b-2 border-[#163c4a]" : ""
-                }`}
-              >
-                {t}
-              </button>
-            ))}
+            <p className="mt-2 font-medium">{items.material}</p>
           </div>
 
-          {tab === "description" && (
-            <p>{items.longDescription}</p>
-          )}
+          <div className="bg-white p-4 rounded-xl shadow">
+            <h3 className="font-semibold text-sm text-gray-500">Reviews</h3>
+
+            <p className="mt-2 font-medium">{items.reviewsCount} Reviews</p>
+          </div>
+          <div className="bg-white p-4 rounded-xl shadow">
+          <h3 className="font-semibold text-sm text-gray-500">Stock</h3>
+
+          <p
+            className={`mt-2 font-medium ${
+              items.stock > 10 ? "text-green-600" : "text-red-500"
+            }`}
+          >
+            {items.stock} Available
+          </p>
         </div>
+        </div>  
+        </div>
+      </div>
+      <div className="flex flex-col">
+        <div className="border-b flex  gap-8 mb-6">
+        <button
+          onClick={() => setTab("description")}
+          className={`pb-3 ${
+            tab === "description"
+              ? "border-b-2 border-[#163c4a] font-semibold"
+              : "text-gray-500"
+          }`}
+        >
+          Description
+        </button>
+
+        <button
+          onClick={() => setTab("specifications")}
+          className={`pb-3 ${
+            tab === "specifications"
+              ? "border-b-2 border-[#163c4a] font-semibold"
+              : "text-gray-500"
+          }`}
+        >
+          Specifications
+        </button>
+
+        <button
+          onClick={() => setTab("manufacturer")}
+          className={`pb-3 ${
+            tab === "manufacturer"
+              ? "border-b-2 border-[#163c4a] font-semibold"
+              : "text-gray-500"
+          }`}
+        >
+          Manufacturer Details
+        </button>
+      </div>
+
+      <div className="bg-white rounded-2xl shadow p-6">
+        {tab === "description" && (
+          <>
+            <p className="text-gray-600 leading-7 mb-6">
+              {items.longDescription}
+            </p>
+
+            <h3 className="font-semibold text-lg mb-4">Top Highlights</h3>
+
+            <ul className="space-y-3">
+              {items.topHighlights?.map((highlight, i) => (
+                <li key={i} className="flex items-center gap-2">
+                  <span className="text-green-600">✓</span>
+                  {highlight}
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+
+        {tab === "specifications" && (
+          <div className="space-y-4">
+            {Object.entries(items.specifications).map(([key, value]) => (
+              <div key={key} className="flex justify-between border-b pb-3">
+                <span className="capitalize font-medium">{key}</span>
+
+                <span className="text-gray-600">{value}</span>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {tab === "manufacturer" && (
+          <div className="space-y-4">
+            <div>
+              <span className="font-semibold">Manufacturer:</span>{" "}
+              {items.manufacturerDetails.manufacturer}
+            </div>
+
+            <div>
+              <span className="font-semibold">Address:</span>{" "}
+              {items.manufacturerDetails.address}
+            </div>
+
+            <div>
+              <span className="font-semibold">Country Of Origin:</span>{" "}
+              {items.manufacturerDetails.countryOfOrigin}
+            </div>
+          </div>
+        )}
+      </div>
       </div>
     </div>
   );

@@ -18,13 +18,10 @@ const Logout = () => {
 
         setTimeout(() => {
           navigate("/");
+          window.location.reload()
         }, 2000);
       } catch (error) {
         console.error(error);
-
-        setTimeout(() => {
-          navigate("/");
-        }, 2000);
       }
     };
 

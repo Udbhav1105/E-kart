@@ -34,6 +34,7 @@ const Navbar = () => {
         );
 
         if (res?.data) {
+          console.log(res.data.message)
           setlog(res.data.message);
         }
       } catch (err) {}
