@@ -46,8 +46,7 @@ const Cart = () => {
     const payment = async () => {
     const res = await axios.post(
         "http://localhost:8000/payment",
-        { total },
-        { withCredentials: true }
+        { total }
     );
 
     const order = res.data;
