@@ -42,7 +42,7 @@ const Cart = () => {
 
     const payment = async () => {
     const res = await axios.post(
-        "http://localhost:8000/payment",
+        "https://e-kart-3.onrender.com/payment",
         { total }
     );
 
