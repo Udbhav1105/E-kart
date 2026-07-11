@@ -24,6 +24,7 @@ const Cart = () => {
   
 
   useEffect(() => {
+    console.log("Razorpay Key:", import.meta.env.VITE_RAZORPAY_KEY);
     getCart();
   }, []);
 
@@ -47,7 +48,6 @@ const Cart = () => {
     );
 
     const order = res.data;
-
     const options = {
         key: import.meta.env.VITE_RAZORPAY_KEY,
         amount: order.amount,
@@ -59,6 +59,8 @@ const Cart = () => {
         //     console.log(response);
         // }
     };
+    console.log(options)
+    console.log(import.meta.env.VITE_RAZORPAY_KEY)
 
     const rzp = new window.Razorpay(options);
     rzp.open();
