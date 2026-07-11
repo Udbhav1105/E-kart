@@ -40,9 +40,6 @@ const Cart = () => {
     0
   );
 
-  const payment=async()=>{
-    let res=await axios.post('http://localhost:8000/payment',{total},{withCredentials})
-    console.log(res.data)
     const payment = async () => {
     const res = await axios.post(
         "http://localhost:8000/payment",
@@ -66,7 +63,7 @@ const Cart = () => {
     const rzp = new window.Razorpay(options);
     rzp.open();
 };
-  }
+
 
   return (
     <div className="min-h-screen bg-[#f7f4ef] px-4 py-10">
