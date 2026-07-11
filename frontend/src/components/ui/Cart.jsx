@@ -46,10 +46,13 @@ const Cart = () => {
         "https://e-kart-3.onrender.com/payment",
         { total }
     );
+    const {data} = await axios.get(
+        "https://e-kart-3.onrender.com/payment/key"
+    );
 
     const order = res.data;
     const options = {
-        key: import.meta.env.VITE_RAZORPAY_KEY,
+        key: data.key,
         amount: order.amount,
         currency: order.currency,
         order_id: order.id,
