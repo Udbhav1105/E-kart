@@ -57,10 +57,11 @@ const Cart = () => {
         currency: order.currency,
         order_id: order.id,
 
-        // handler: async function (response) {
-        //     // Send payment details to backend for verification
-        //     console.log(response);
-        // }
+         handler: async function (response) {
+           let confirm =await axios.post('https://e-kart-3.onrender.com/payment/verify',{response})
+           console.log(confirm.success,confirm.message)
+            console.log(response);
+        }
     };
     console.log(options)
     console.log(import.meta.env.VITE_RAZORPAY_KEY)
