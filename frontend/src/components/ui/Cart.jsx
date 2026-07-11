@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import { DataAssestsApi } from "../../Data/DataAssets";
 import { useNavigate } from "react-router-dom";
+import Razorpay from 'razorpay'
 
 const Cart = () => {
   const [products,cartValue,setcartValue] = useContext(DataAssestsApi);
@@ -20,6 +21,8 @@ const Cart = () => {
     }
   };
 
+  
+
   useEffect(() => {
     getCart();
   }, []);
@@ -36,6 +39,35 @@ const Cart = () => {
     (sum, item) => sum + item.price * item.quantity,
     0
   );
+
+  const payment=async()=>{
+    let res=await axios.post('http://localhost:8000/payment',{total},{withCredentials})
+    console.log(res.data)
+    const payment = async () => {
+    const res = await axios.post(
+        "http://localhost:8000/payment",
+        { total },
+        { withCredentials: true }
+    );
+
+    const order = res.data;
+
+    const options = {
+        key: import.meta.env.VITE_RAZORPAY_KEY,
+        amount: order.amount,
+        currency: order.currency,
+        order_id: order.id,
+
+        // handler: async function (response) {
+        //     // Send payment details to backend for verification
+        //     console.log(response);
+        // }
+    };
+
+    const rzp = new window.Razorpay(options);
+    rzp.open();
+};
+  }
 
   return (
     <div className="min-h-screen bg-[#f7f4ef] px-4 py-10">
@@ -169,7 +201,9 @@ const Cart = () => {
                   </div>
                 </div>
 
-                <button className="w-full mt-6 bg-[#163c4a] hover:bg-[#1d4b5c] text-white py-3 rounded-xl font-semibold transition">
+                <button 
+                onClick={payment}
+                className="w-full mt-6 bg-[#163c4a] hover:bg-[#1d4b5c] text-white py-3 rounded-xl font-semibold transition">
                   Proceed to Checkout
                 </button>
               </div>

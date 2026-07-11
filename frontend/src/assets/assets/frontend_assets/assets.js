@@ -700,4 +700,284 @@ export const products = [{
     "$date": "2026-06-24T14:47:07.045Z"
   },
   "__v": 0
+},
+{
+  "_id": "p20",
+  "name": "Running Shoes",
+  "shortDescription": "ASICS Womens Dynablast 5 Running Shoes",
+  "longDescription": "Soft Grip: The ASICSGRIP outsole provides a softer feel for better traction during runs.\nComfortable, Breathable Upper: A soft and stretchy upper provides breathability, more flexibility and comfort.",
+  "price": 12999,
+  "discountPrice": 11999,
+  "currency": "INR",
+  "images": [
+    "https://m.media-amazon.com/images/I/612KZPAm3pL._SY695_.jpg",
+    "https://m.media-amazon.com/images/I/61EhNOxul7L._SY695_.jpg",
+    "https://m.media-amazon.com/images/I/71Tm-1sn6mL._SY695_.jpg",
+    "https://m.media-amazon.com/images/I/71of2YckvXL._SY695_.jpg"
+  ],
+  "category": "Women",
+  "subCategory": "Footwear",
+  "brand": "ASICS",
+  "sizes": [
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+  ],
+  "color": "White/Breeze",
+  "material": "Mesh",
+  "topHighlights": [
+    "Material type-Mesh",
+    " Closure type-Lace Up",
+    " Heel type-Flat",
+    " Water resistance level-Not Water Resistant"
+  ],
+  "specifications": {
+    "fabric": "Mesh",
+    "fit": "Lace Up",
+    "sleeve": "Flat",
+    "pattern": "Low top"
+  },
+  "manufacturerDetails": {
+    "manufacturer": "ASICS",
+    "address": "ASICS, Mochiko Shoes,Khasra No.3914, Mouza Mazri Grant, Lal Tappar Indl Area,Dehradun-248140.INDIA",
+    "countryOfOrigin": "India"
+  },
+  "ratings": 5,
+  "stock": 8,
+  "bestseller": true,
+  "date": {
+    "$date": "2026-06-24T14:56:26.178Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-24T14:56:26.179Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-24T14:56:26.179Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "p21",
+  "name": "Women's Medium-Length Bomber Jacket",
+  "shortDescription": "Qube By Fort Collins Women's Medium-Length Bomber Jacket with Detachable Hood Stylish Winterwear for All-Day Comfort |Material: Nylon",
+  "longDescription": "Elevate your winter wardrobe with this women’s medium-length bomber jacket by Fort Collins, designed for both warmth and style. This jacket features a quilted construction with a lightly padded interior, perfect for retaining heat during cold weather. Its sleek, feminine silhouette and modern design make it a fashionable outerwear choice, whether you're heading out for errands or weekend outings.\nThe jacket includes a detachable faux fur-trimmed hood, providing versatile styling and extra protection on windy days. Thoughtfully designed with a full front zip closure, adjustable drawcords, and functional flap pockets with snap buttons, it offers both convenience and charm. Ribbed cuffs and a snug hem keep the cold air out, ensuring optimal insulation and comfort throughout the day.",
+  "price": 2999,
+  "discountPrice": 1799,
+  "currency": "INR",
+  "images": [
+    "https://m.media-amazon.com/images/I/71bfsfSAZOL._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/71HnhdA8BjL._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/71IYxm-45RL._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/71UJfgx+ZpL._SY879_.jpg"
+  ],
+  "category": "Women",
+  "subCategory": "Winterwear",
+  "brand": "Qube",
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL",
+    "3XL"
+  ],
+  "color": "Yellow",
+  "material": "100% Polyester",
+  "topHighlights": [
+    "Material composition-100% Polyester",
+    " Style-Parka Coat ",
+    "Fit type-Regular ",
+    "Length-Long Length"
+  ],
+  "specifications": {
+    "fabric": "100% Polyester",
+    "fit": "Regular",
+    "sleeve": "Long Length",
+    "pattern": "Solid"
+  },
+  "manufacturerDetails": {
+    "manufacturer": "Indra Hosiery Mills",
+    "address": "Indra Hosiery Mills, Indra Hosiery Mills, Plot no. 31 to 36, Behind Nagesh Building, Sharman Enclave, Near Jalandhar Bypass, Ludhiana, Punjab, India - 141008, Email: info@fortcollins.co.in, Website: www.fortcollins.co.in, Contact: +91-98880-05152",
+    "countryOfOrigin": "India"
+  },
+  "ratings": 4.1,
+  "stock": 100,
+  "bestseller": false,
+  "date": {
+    "$date": "2026-06-24T15:06:05.616Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-24T15:06:05.617Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-24T15:06:05.617Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "p22",
+  "name": "Skinny Fit Thermal Wear",
+  "shortDescription": "Boldfit Skinny Fit Thermal Wear for Women Leggings Winter Wear for Women Warm Fleece Natural Insulation Lower Body Warmer for Woman Polyspandex Tights Thermals for Woman Winter Inner Leggings",
+  "longDescription": "PREMIUM WARM WINTER LEGGINGS FOR WOMEN : Stay cozy in peak winters with Boldfit Bottom Thermal Wear for Women. These thermal leggings provide natural insulation & warmth for cold weather. Ideal winter wear for women looking for full-length inner leggings for daily use, office, travel, and outdoor activities. Perfect thermal lower for women to pair with sweaters, coats, kurtis & dresses. A must-have body warmer for winter wardrobe.",
+  "price": 899,
+  "discountPrice": 499,
+  "currency": "INR",
+  "images": [
+    "https://m.media-amazon.com/images/I/61BJ+4QxM0L._SX679_.jpg",
+    "https://m.media-amazon.com/images/I/81IqjQyhYUL._SX679_.jpg",
+    "https://m.media-amazon.com/images/I/714QZ-17f2L._SX679_.jpg",
+    "https://m.media-amazon.com/images/I/71Yp7aD8E+L._SX679_.jpg"
+  ],
+  "category": "Women",
+  "subCategory": "Winterwear",
+  "brand": "Boldfit",
+  "sizes": [
+    "XS",
+    "S",
+    "M"
+  ],
+  "color": "Grey",
+  "material": "Polyester Blend",
+  "topHighlights": [
+    "Material type-Polyster Blend",
+    " Length-Full Length",
+    " Style-Modern",
+    " Closure type-Pull On"
+  ],
+  "specifications": {
+    "fabric": "Polyester Blend",
+    "fit": "Fitted",
+    "sleeve": "Full Length",
+    "pattern": "Solid"
+  },
+  "manufacturerDetails": {
+    "manufacturer": "Bling Brands Pvt. Ltd.",
+    "address": "Bling Brands Pvt. Ltd., J.P. Nagar 3rd Phase, Bengaluru, Karnataka - 560076, support@boldfit.in, 9240247160, Boldfit",
+    "countryOfOrigin": "India"
+  },
+  "ratings": 4,
+  "stock": 460,
+  "bestseller": false,
+  "date": {
+    "$date": "2026-06-24T15:12:45.675Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-24T15:12:45.675Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-24T15:12:45.675Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "p23",
+  "name": "Womanista Kurta set",
+  "shortDescription": "Womanista Kurta set for Women with dupatta || Embroidered Kurta for Women || Farshi Salwar set",
+  "longDescription": "Pack of 3 Partywear Kurta Set -: Top Style – Short Kurta : Top Fabric – Poly Vichitra Silk , Pant Style – Farshi Salwar :Pant Fabric – Poly Vichitra Silk ; Dupatta Fabric – Poly Vichitra Silk : Color – Grunge Pink and Off White\nKurtaset set for Women, kurtaSet with Dupatta, Womanista Kurta Set, Tikhi imli Kurtaset, Embroidered KurtaSet, Wedding Kurtaset, Farshi Salwar Set, Pakistani suit, Short Kurta Set\nStyle: Short Kurta || Length: Above Knee Length || Sleeves: 3/4th Sleeves || Bottom : Farshi Salwar",
+  "price": 1599,
+  "discountPrice": 1399,
+  "currency": "INR",
+  "images": [
+    "https://m.media-amazon.com/images/I/61EvDaNNUqL._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/81JLeL9YjCL._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/714xHjyTg9L._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/71bMGqImngL._SY879_.jpg"
+  ],
+  "category": "Women",
+  "subCategory": "Ethnic",
+  "brand": "Womanista",
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "color": "Rust",
+  "material": "Silk Blend",
+  "topHighlights": [
+    "Material composition-Silk Blend ",
+    "Length-Knee Length",
+    " Sleeve type-3/4 Sleeve ",
+    "Neck style-V Neck"
+  ],
+  "specifications": {
+    "fabric": "Silk Blend",
+    "fit": "Regular",
+    "sleeve": "3/4 Sleeve",
+    "pattern": "Embroidered"
+  },
+  "manufacturerDetails": {
+    "manufacturer": "Brand Baaja Bride LLP",
+    "address": "Brand Baaja Bride LLP, Brand Baaja Bride LLP: Shop 102-103-104 Vardan Textile Market, Parvat Patiya, Surat-395010, GJ, India",
+    "countryOfOrigin": "India"
+  },
+  "ratings": 3.4,
+  "stock": 36,
+  "bestseller": false,
+  "date": {
+    "$date": "2026-06-24T15:21:42.699Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-24T15:21:42.699Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-24T15:21:42.699Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "p24",
+  "name": "Womanista satin saree",
+  "shortDescription": "Womanista satin sarees for women Party | fancy saree | soft silk saree",
+  "longDescription": "Elegant Party Wear Silk adorned Floral Zari Embroidery saree for a rich and graceful look.\nCrafted from soft and lightweight fabric that ensures effortless draping and all-day comfort.\nComes with a matching unstitched blouse fabric that can be tailored to your preferred style and fit.\nIdeal for Special Occasions such as Haldi, Mehendi, Wedding Functions, Sangeet, Engagements, Receptions, Parties, and Festive Events.",
+  "price": 8999,
+  "discountPrice": 6599,
+  "currency": "INR",
+  "images": [
+    "https://m.media-amazon.com/images/I/714fk0gRfoL._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/81p9BUFGPwL._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/814F+rcXOeL._SY879_.jpg",
+    "https://m.media-amazon.com/images/I/91-QjYZvScL._SY879_.jpg"
+  ],
+  "category": "Women",
+  "subCategory": "Ethnic",
+  "brand": "Womanista",
+  "sizes": [
+    "Free"
+  ],
+  "color": "Maroon",
+  "material": "Satin",
+  "topHighlights": [
+    "Material composition-Satin",
+    " Occasion type-Festival Party Wedding ",
+    "Included components-Blouse ",
+    "Care instructions-Dry Clean Only"
+  ],
+  "specifications": {
+    "fabric": "Satin",
+    "fit": "Modern Fit",
+    "sleeve": "29 m",
+    "pattern": "Solid"
+  },
+  "manufacturerDetails": {
+    "manufacturer": "Brand Baaja Bride LLP",
+    "address": "Brand Baaja Bride LLP, Brand Baaja Bride LLP: Shop 102-103-104 Vardan Textile Market, Parvat Patiya, Surat-395010, GJ, India",
+    "countryOfOrigin": "India"
+  },
+  "ratings": 4.1,
+  "stock": 44,
+  "bestseller": false,
+  "date": {
+    "$date": "2026-06-24T15:35:47.546Z"
+  },
+  "createdAt": {
+    "$date": "2026-06-24T15:35:47.548Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-24T15:35:47.548Z"
+  },
+  "__v": 0
 }]

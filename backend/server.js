@@ -2,7 +2,8 @@ import express from 'express'
 import connectDB from './database/db.js'
 import userRoute from './Routes/userRoute.js'
 import adminRoute from './Routes/adminRoute.js'
-import showProducts from './Routes/showProducts.js'
+// import showProducts from './Routes/showProducts.js'
+import paymentRoute from './Routes/paymentRoute.js'
 // dotenv.config({path:'./.env'})
 import cookieParser from 'cookie-parser'
 import cors from 'cors'
@@ -31,7 +32,7 @@ app.use(
     // })
     app.use('/api/v1/user',userRoute)
     app.use('/admin',adminRoute)
-    app.use('/products',showProducts)
+    app.use('/payment',paymentRoute)
     app.use(express.static(path.join(__dirname, "public")));
 app.get('/{*splat}',(req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));

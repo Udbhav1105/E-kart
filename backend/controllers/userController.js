@@ -337,6 +337,8 @@ export const remove=async(req,res)=>{
     })
 }
 
+
+
 export const verifyUser = async (req, res, next) => {
   const token = req.cookies.token;
 
