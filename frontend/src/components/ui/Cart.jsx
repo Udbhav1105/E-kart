@@ -56,17 +56,11 @@ const Cart = () => {
         currency: order.currency,
         order_id: order.id,
 
-<<<<<<< HEAD
-         handler: async function (response) {
-           let confirm =await axios.post('https://e-kart-3.onrender.com/payment/verify',{response})
-           console.log(confirm.success,confirm.message)
-            console.log(response);
-=======
+
         handler: async function (response) {
           console.log(response);
            let confirm =axios.post('https://e-kart-3.onrender.com/payment/verify',{response})
            console.log(confirm.success,confirm.message)
->>>>>>> 76a973f (payment verification)
         }
     };
     console.log(options)
