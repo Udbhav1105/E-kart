@@ -9,8 +9,10 @@ RUN npm install
 
 COPY ./frontend .
 
-RUN npm run build
+RUN printenv | grep VITE || true
+RUN echo "VITE_RAZORPAY_KEY=$VITE_RAZORPAY_KEY"
 
+RUN npm run build
 
 FROM node:20-alpine
 
