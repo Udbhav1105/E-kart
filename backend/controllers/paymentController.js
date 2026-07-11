@@ -20,8 +20,8 @@ export const key=async(req,res)=>{
 
 export const verifypayment=async(req,res)=>{
     const {response}=req.body;
-    order_id=response.order_id;
-    payment_id=response.payment_id
+    order_id=response.razorpay_order_id;
+    payment_id=response.razorpay_payment_id
     const generatedsign=crypto.createHmac("sha256",process.env.RAZ_SECRET).update(order_id+"|"+payment_id).digest("hex");
     if(generatedsign===response.razorpay_signature){
         return res.status(200).json({

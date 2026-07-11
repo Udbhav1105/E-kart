@@ -59,7 +59,7 @@ const Cart = () => {
 
         handler: async function (response) {
           console.log(response);
-           let confirm =axios.post('https://e-kart-3.onrender.com/payment/verify',{response})
+           let confirm =await axios.post('https://e-kart-3.onrender.com/payment/verify',{response})
            console.log(confirm.success,confirm.message)
         }
     };
