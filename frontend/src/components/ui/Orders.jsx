@@ -25,6 +25,7 @@ console.log(merged)
       }, [])
   return (
      <div className="px-4 py-4">
+      <h2 className='text-bold text-[3vw] px-8 font-semibold'>Your Orders</h2>
             <div className="lg:col-span-2 flex flex-col gap-5">
               {merged.map((item,idx) => (
                 <div

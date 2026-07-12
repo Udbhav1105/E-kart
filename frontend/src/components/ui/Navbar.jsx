@@ -119,7 +119,7 @@ const Navbar = () => {
                 )}
 
                 <Link
-                  to="/order"
+                  to="/orders"
                   className="hover:text-[#d6b88d]"
                 >
                   Orders
