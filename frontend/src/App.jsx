@@ -12,6 +12,7 @@ import View from "./components/ui/View";
 import Cart from "./components/ui/Cart";
 import Logout from "./Pages/Logout";
 import { useState } from "react";
+import Orders from "./components/ui/Orders";
 
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
       <Route path="/logout" element={<Logout />} />
       <Route path='/product/:id' element={<View />} />
       <Route path='/user/cart' element={<Cart />} />
+      <Route path='/orders' element={<Orders />} />
     </Routes>
     <Footer />
     </div>

@@ -354,7 +354,7 @@ export const products = [{
     "countryOfOrigin": "India"
   },
   "ratings": 4.2,
-  "stock": -2,
+  "stock": 11,
   "bestseller": false,
   "date": {
     "$date": "2026-06-24T13:59:48.884Z"

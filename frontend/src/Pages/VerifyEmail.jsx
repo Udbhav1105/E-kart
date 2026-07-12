@@ -13,7 +13,7 @@ const VerifyEmail = () => {
     const verifyEmail = async () => {
       try {
         await axios.post(
-          "https://e-kart-3.onrender.com/api/v1/user/verify",
+          `${import.meta.env.VITE_URL}api/v1/user/verify`,
           {},
           {
             headers: {

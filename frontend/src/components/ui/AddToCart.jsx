@@ -10,7 +10,7 @@ const addToCart = async () => {
 try {
   setcartValue(prev=>prev+1)
 await axios.post(
-"https://e-kart-3.onrender.com/api/v1/user/addToCart",
+`${import.meta.env.VITE_URL}api/v1/user/addToCart`,
 { _id: id },
 { withCredentials: true }
 );

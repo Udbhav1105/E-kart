@@ -9,7 +9,7 @@ const Logout = () => {
     const logoutUser = async () => {
       try {
         await axios.post(
-          "https://e-kart-3.onrender.com/api/v1/user/logout",
+          `${import.meta.env.VITE_URL}api/v1/user/logout`,
           {},
           {
             withCredentials: true,

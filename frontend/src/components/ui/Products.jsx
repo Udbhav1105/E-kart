@@ -14,7 +14,7 @@ const Products = () => {
   
   //  useEffect(()=>{
   //   async  function addProduct(){
-  //     const res=await axios.get("https://e-kart-3.onrender.com/products")
+  //     const res=await axios.get("http://localhost:8000/products")
   //     // console.log(res.data.product)
   //     setProducts(res.data.product)
   //   }

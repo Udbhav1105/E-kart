@@ -9,7 +9,7 @@ const Collections = ({data}) => {
    const getCart = async () => {
     try {
       const res = await axios.get(
-        "https://e-kart-3.onrender.com/api/v1/user/cart",
+        `${import.meta.env.VITE_URL}/api/v1/user/cart`,
         { withCredentials: true }
       );
       setcartValue(res.data.cart.length);

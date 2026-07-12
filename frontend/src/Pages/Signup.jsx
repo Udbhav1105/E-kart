@@ -32,7 +32,7 @@ const Signup = () => {
 
     try {
       const res = await axios.post(
-        "https://e-kart-3.onrender.com/api/v1/user/register",
+        `${import.meta.env.VITE_URL}api/v1/user/register`,
         formData
       );
 
