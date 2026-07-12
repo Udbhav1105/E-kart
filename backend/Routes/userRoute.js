@@ -1,6 +1,6 @@
 import express from 'express'
 
-import { login, register, reVerify, verify,isAvailable, logout, cart, addToCart, remove, verifyUser, checkAuth} from '../controllers/userController.js'
+import { login, register, reVerify, verify,isAvailable, logout, cart, addToCart, remove, verifyUser, checkAuth, order} from '../controllers/userController.js'
 
 const router=express.Router()
 
@@ -14,6 +14,7 @@ router.get('/cart',cart)
 router.post('/addToCart',addToCart)
 router.post('/cart/remove',remove)
 router.post('/auth',checkAuth)
+router.get('/order',order)
 
 
 export default router

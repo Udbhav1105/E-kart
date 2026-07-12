@@ -29,6 +29,19 @@ const userSchema=new mongoose.Schema({
         type:Number,
         default:1
     }
+   }],
+   order:[{
+    product:String,
+    quantity:{
+        type:Number,
+        default:1
+    },
+    status:String,
+    order_id:String,
+     placedAt: {
+        type: Date,
+        default: Date.now
+    }
    }]
 } ,{timestamps:true})
 

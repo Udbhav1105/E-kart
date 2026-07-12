@@ -385,3 +385,61 @@ export const checkAuth = async (req, res) => {
     });
   }
 };
+
+export const order = async (req, res) => {
+    try {
+        const token = req.cookies.token;
+        // const { _id } = req.body;
+
+        if (!token) {
+            return res.status(401).json({
+                success: false,
+                message: "No token provided"
+            });
+        }
+
+        const decode = jwt.verify(token, process.env.SECRET_KEY);
+
+        const user = await User.findOne({ email: decode.email })    ;
+
+        if (!user) {
+            return res.status(404).json({
+                success: false,
+                message: "User not found"
+            });
+        }
+        else{
+            return res.status(200).json({
+                success:true,
+                order:user.order
+            })
+        }
+
+        // Check if product already exists
+        // const existingProduct = user.cart.find(
+        //     item => item.product.toString() === id
+        // );
+
+        // if (existingProduct) {
+        //     existingProduct.quantity += 1;
+        // } else {
+        //     user.cart.push({
+        //         product: id,
+        //         quantity: 1
+        //     });
+        // }
+
+        // await user.save();
+        // console.log(user.cart)
+        // return res.status(200).json({
+        //     success: true,
+        //     message: "Item added successfully"
+        // });
+
+    } catch (error) {
+        return res.status(500).json({
+            success: false,
+            message: error.message
+        });
+    }
+};

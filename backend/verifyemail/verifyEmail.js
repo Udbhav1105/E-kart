@@ -73,7 +73,7 @@ export const verifyEmail = async (token, email) => {
       {
         sender: {
           name: "Ekart",
-          email: process.env.EMAIL, // Brevo me verified sender
+          email: process.env.EMAIL, 
         },
         to: [
           {
