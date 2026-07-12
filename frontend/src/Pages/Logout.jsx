@@ -9,7 +9,7 @@ const Logout = () => {
     const logoutUser = async () => {
       try {
         await axios.post(
-          `${import.meta.env.VITE_URL}api/v1/user/logout`,
+          `/api/v1/user/logout`,
           {},
           {
             withCredentials: true,

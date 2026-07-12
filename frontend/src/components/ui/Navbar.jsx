@@ -26,7 +26,7 @@ const Navbar = () => {
     const isAvailable = async () => {
       try {
         const res = await axios.post(
-          `${import.meta.env.VITE_URL}api/v1/user/auth`,
+          `/api/v1/user/auth`,
           {},
           {
             withCredentials: true,

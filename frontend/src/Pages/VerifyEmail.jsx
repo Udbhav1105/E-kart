@@ -13,7 +13,7 @@ const VerifyEmail = () => {
     const verifyEmail = async () => {
       try {
         await axios.post(
-          `${import.meta.env.VITE_URL}api/v1/user/verify`,
+          `/api/v1/user/verify`,
           {},
           {
             headers: {

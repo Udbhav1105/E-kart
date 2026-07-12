@@ -32,7 +32,7 @@ const Signup = () => {
 
     try {
       const res = await axios.post(
-        `${import.meta.env.VITE_URL}api/v1/user/register`,
+        `/api/v1/user/register`,
         formData
       );
 

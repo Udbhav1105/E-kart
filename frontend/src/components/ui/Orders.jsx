@@ -7,7 +7,7 @@ const Orders = () => {
     const [orders, setorder] = useState([])
     const navigate=useNavigate()
     const order=async()=>{
-        let res=await axios.get(`${import.meta.env.VITE_URL}api/v1/user/order`,{withCredentials:true})
+        let res=await axios.get(`/api/v1/user/order`,{withCredentials:true})
         console.log(res.data.order)
         setorder(res.data.order)
       }

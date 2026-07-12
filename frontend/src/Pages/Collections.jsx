@@ -9,7 +9,7 @@ const Collections = ({data}) => {
    const getCart = async () => {
     try {
       const res = await axios.get(
-        `${import.meta.env.VITE_URL}/api/v1/user/cart`,
+        `//api/v1/user/cart`,
         { withCredentials: true }
       );
       setcartValue(res.data.cart.length);

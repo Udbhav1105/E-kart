@@ -30,7 +30,7 @@ const Login = () => {
 
     try {
       const res = await axios.post(
-        `${import.meta.env.VITE_URL}api/v1/user/login`,
+        `/api/v1/user/login`,
         formData,
         {
           withCredentials: true,

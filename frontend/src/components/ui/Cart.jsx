@@ -12,7 +12,7 @@ const Cart = () => {
   const getCart = async () => {
     try {
       const res = await axios.get(
-        `${import.meta.env.VITE_URL}api/v1/user/cart`,
+        `/api/v1/user/cart`,
         { withCredentials: true }
       );
       setCart(res.data.cart);
@@ -42,11 +42,11 @@ const Cart = () => {
 
     const payment = async () => {
     const res = await axios.post(
-        `${import.meta.env.VITE_URL}payment`,
+        `/payment`,
         { total }
     );
     const {data} = await axios.get(
-        `${import.meta.env.VITE_URL}payment/key`
+        `/payment/key`
     );
 
     const order = res.data;
@@ -59,7 +59,7 @@ const Cart = () => {
 
         handler: async function (response) {
           console.log(response);
-           let confirm =await axios.post(`${import.meta.env.VITE_URL}payment/verify`,{response},{withCredentials:true})
+           let confirm =await axios.post(`/payment/verify`,{response},{withCredentials:true})
            if(confirm.data.success){
             navigate('/orders')
            }
@@ -151,7 +151,7 @@ const Cart = () => {
                       <button
                         onClick={async () => {
                           await axios.post(
-                            `${import.meta.env.VITE_URL}api/v1/user/addToCart`,
+                            `/api/v1/user/addToCart`,
                             { _id: item._id },
                             { withCredentials: true }
                           );
@@ -166,7 +166,7 @@ const Cart = () => {
                         onClick={async () => {
                           setcartValue(prev=>prev-1)
                           await axios.post(
-                            `${import.meta.env.VITE_URL}api/v1/user/cart/remove`,
+                            `/api/v1/user/cart/remove`,
                             { _id: item._id },
                             { withCredentials: true }
                           );
